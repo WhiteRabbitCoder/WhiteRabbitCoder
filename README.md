@@ -1,7 +1,7 @@
 <h1 align="center">Hola 👋, soy Angelo Gaviria</h1>
 <p align="center">
   <a href="https://github.com/WhiteRabbitCoder">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=460&lines=Backend+Developer+%7C+Java+%2F+Spring+Boot;Frontend+Developer+con+Next.js+%2F+React;Apasionado+por+la+educaci%C3%B3n+y+la+tecnolog%C3%ADa" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=480&lines=Backend+Developer+%7C+Java+%2F+Spring+Boot;Frontend+Developer+con+Next.js+%2F+React;Apasionado+por+la+educaci%C3%B3n+y+la+tecnolog%C3%ADa" alt="Typing SVG" />
   </a>
 </p>
 
