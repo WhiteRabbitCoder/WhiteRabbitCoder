@@ -1,8 +1,7 @@
-
 <h1 align="center">Hola 👋, soy Angelo Gaviria</h1>
 <p align="center">
   <a href="https://github.com/WhiteRabbitCoder">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=460&lines=Backend+Developer+%7C+Java+%2F+Spring+Boot;Frontend+Developer+con+Next.js+%2F+React;Apasionado+por+la+educación+y+la+tecnología" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=460&lines=Backend+Developer+%7C+Java+%2F+Spring+Boot;Frontend+Developer+con+Next.js+%2F+React;Apasionado+por+la+educaci%C3%B3n+y+la+tecnolog%C3%ADa" alt="Typing SVG" />
   </a>
 </p>
 
@@ -22,7 +21,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,spring,js,ts,react,nextjs,nodejs,prisma,py,html,css,tailwind,thymeleaf,mysql,postgres,supabase,git,github,vscode,vercel,railway,docker,firebase" />
+    <img src="https://skillicons.dev/icons?i=java,spring,js,ts,react,nextjs,nodejs,prisma,py,html,css,tailwind,thymeleaf,mysql,postgres,supabase,git,github,vscode,vercel,railway,docker,firebase" alt="Stack Tecnológico" />
   </a>
 </p>
 
@@ -49,12 +48,12 @@
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=WhiteRabbitCoder&show_icons=true&theme=algolia&count_private=true" />
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WhiteRabbitCoder&layout=compact&theme=algolia&langs_count=8" />
+  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=WhiteRabbitCoder&show_icons=true&theme=algolia&count_private=true" alt="GitHub Stats" />
+  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WhiteRabbitCoder&layout=compact&theme=algolia&langs_count=8" alt="Top Langs" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=WhiteRabbitCoder&theme=dark" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=WhiteRabbitCoder&theme=dark" alt="GitHub Streak" />
 </p>
 
 ---
