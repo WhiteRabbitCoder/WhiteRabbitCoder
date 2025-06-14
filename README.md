@@ -1,7 +1,7 @@
 <h1 align="center">Hola 👋, soy Angelo Gaviria</h1>
 <p align="center">
   <a href="https://github.com/WhiteRabbitCoder">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=480&lines=Backend+Developer+%7C+Java+%2F+Spring+Boot;Frontend+Developer+con+Next.js+%2F+React;Apasionado+por+la+educaci%C3%B3n+y+la+tecnolog%C3%ADa" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=480&lines=Backend+Dev+%7C+Java+%26+Spring;Frontend+Dev+%7C+Next.js+%26+React;Pasi%C3%B3n+por+educaci%C3%B3n+y+tecnolog%C3%ADa" alt="Typing SVG" />
   </a>
 </p>
 
@@ -21,7 +21,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,spring,js,ts,react,nextjs,nodejs,prisma,py,html,css,tailwind,thymeleaf,mysql,postgres,supabase,git,github,vscode,vercel,railway,docker,firebase" alt="Stack Tecnológico" />
+    <img src="https://skillicons.dev/icons?i=java,python,lua,js,ts,html,css,spring,nodejs,react,nextjs,prisma,hibernate,tailwind,mysql,postgres,supabase,firebase,git,github,docker,vscode,idea,postman,figma,vercel,unity,insomnia,cpp" alt="Stack Tecnológico" />
   </a>
 </p>
 
