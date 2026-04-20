@@ -1,23 +1,41 @@
-<svg width="860" height="480" viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg">
+<svg width="860" height="860" viewBox="0 0 860 860" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes slideIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:translateX(0)}}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.wrap{animation:fadeIn .5s ease}
-.n1{animation:slideIn .6s .1s both}
-.n2{animation:slideIn .6s .25s both}
-.n3{animation:slideIn .6s .4s both}
-.cur{animation:blink 1s step-end infinite}
-.br1{animation:fadeIn .5s .55s both}
-.br2{animation:fadeIn .5s .75s both}
-.br3{animation:fadeIn .5s .95s both}
-.br4{animation:fadeIn .5s 1.15s both}
-.p1{animation:fadeIn .5s 1.4s both}
-.p2{animation:fadeIn .5s 1.6s both}
-.p3{animation:fadeIn .5s 1.8s both}
-.p4{animation:fadeIn .5s 2.0s both}
-.p5{animation:fadeIn .5s 2.2s both}
+@keyframes breathe{0%,100%{opacity:.028}50%{opacity:.055}}
+@keyframes flutter{0%,100%{opacity:.05;transform:translateY(0) rotate(0deg)}50%{opacity:.08;transform:translateY(-5px) rotate(4deg)}}
+@keyframes flutter2{0%,100%{opacity:.04;transform:translateY(0) rotate(0deg)}50%{opacity:.07;transform:translateY(-4px) rotate(-3deg)}}
+
+/* section reveals */
+.wrap{animation:fadeIn .4s ease}
+.n1{animation:slideIn .65s .1s both}
+.n2{animation:slideIn .65s .28s both}
+.n3{animation:slideIn .65s .45s both}
+.cur{animation:blink 1s .7s step-end infinite}
+.s-about{animation:fadeIn .5s .6s both}
+.s-stack{animation:fadeIn .5s .9s both}
+.br1{animation:fadeIn .45s 1.05s both}
+.br2{animation:fadeIn .45s 1.2s both}
+.br3{animation:fadeIn .45s 1.35s both}
+.br4{animation:fadeIn .45s 1.5s both}
+.s-proj{animation:fadeIn .5s 1.7s both}
+.p1{animation:fadeIn .45s 1.85s both}
+.p2{animation:fadeIn .45s 2.0s both}
+.p3{animation:fadeIn .45s 2.15s both}
+.p4{animation:fadeIn .45s 2.3s both}
+.p5{animation:fadeIn .45s 2.45s both}
+.s-conn{animation:fadeIn .5s 2.6s both}
+
+/* decorative */
+.r1{animation:breathe 9s ease-in-out infinite}
+.r2{animation:breathe 12s ease-in-out 4.5s infinite}
+.r3{animation:breathe 10s ease-in-out 8s infinite}
+.bf1{animation:flutter 7s ease-in-out infinite}
+.bf2{animation:flutter2 9s ease-in-out 3s infinite}
+
+/* dark theme */
 .bg{fill:#0d1117}
 .bg2{fill:#161b22}
 .brd{stroke:#30363d}
@@ -25,6 +43,10 @@
 .muted{fill:#8b949e}
 .acc{fill:#58a6ff}
 .grn{fill:#3fb950}
+.sec-lbl{fill:#8b949e;letter-spacing:1.8}
+.t-js{fill:#c9a800}
+
+/* light theme */
 @media(prefers-color-scheme:light){
 .bg{fill:#ffffff}
 .bg2{fill:#f6f8fa}
@@ -33,22 +55,52 @@
 .muted{fill:#57606a}
 .acc{fill:#0969da}
 .grn{fill:#1a7f37}
+.sec-lbl{fill:#57606a;letter-spacing:1.8}
+.t-js{fill:#7a6700}
 }
 </style>
-<linearGradient id="g1" x1="0%" x2="100%">
-<stop offset="0%" stop-color="#58a6ff"/>
-<stop offset="50%" stop-color="#bc8cff"/>
-<stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+<linearGradient id="gbar" x1="0%" x2="100%">
+  <stop offset="0%"   stop-color="#58a6ff"/>
+  <stop offset="50%"  stop-color="#bc8cff"/>
+  <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
 </linearGradient>
 </defs>
 
-<!-- Background -->
-<rect width="860" height="480" rx="12" class="bg"/>
-<rect x=".5" y=".5" width="859" height="479" rx="11.5" fill="none" class="brd" stroke-width="1"/>
-<rect width="860" height="3" rx="2" fill="url(#g1)"/>
+<!-- ─── BG ─── -->
+<rect width="860" height="860" rx="12" class="bg"/>
+<rect x=".5" y=".5" width="859" height="859" rx="11.5" fill="none" class="brd" stroke-width="1"/>
+<rect width="860" height="3" rx="2" fill="url(#gbar)"/>
+
+<!-- ─── MATRIX RAIN (background, barely visible) ─── -->
+<g font-family="monospace" font-size="9" fill="#3fb950">
+  <text x="636" y="60" class="r1">1<tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan></text>
+  <text x="718" y="140" class="r2">0<tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan><tspan x="718" dy="12">0</tspan><tspan x="718" dy="12">1</tspan></text>
+  <text x="808" y="90" class="r3">1<tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan></text>
+</g>
+
+<!-- ─── BUTTERFLY 1 (top-right, green+blue wings) ─── -->
+<g transform="translate(774,162) rotate(-10)" class="bf1">
+  <path d="M0,0 C-5,-17 -30,-19 -25,-7 C-20,4 -7,5 0,0" fill="#3fb950" opacity=".55"/>
+  <path d="M0,0 C 5,-17  30,-19  25,-7 C 20,4  7,5 0,0" fill="#58a6ff" opacity=".55"/>
+  <path d="M0,2 C-4,13 -21,15 -17,5 C-13,-2 -5,0 0,2" fill="#3fb950" opacity=".40"/>
+  <path d="M0,2 C 4,13  21,15  17,5 C 13,-2  5,0 0,2" fill="#58a6ff" opacity=".40"/>
+  <ellipse cx="0" cy="-1" rx="1.3" ry="11" fill="#8b949e" opacity=".55"/>
+</g>
+
+<!-- ─── BUTTERFLY 2 (mid-right, purple+amber wings) ─── -->
+<g transform="translate(826,472) rotate(7) scale(.75)" class="bf2">
+  <path d="M0,0 C-5,-17 -30,-19 -25,-7 C-20,4 -7,5 0,0" fill="#bc8cff" opacity=".55"/>
+  <path d="M0,0 C 5,-17  30,-19  25,-7 C 20,4  7,5 0,0" fill="#e3b341" opacity=".55"/>
+  <path d="M0,2 C-4,13 -21,15 -17,5 C-13,-2 -5,0 0,2" fill="#bc8cff" opacity=".40"/>
+  <path d="M0,2 C 4,13  21,15  17,5 C 13,-2  5,0 0,2" fill="#e3b341" opacity=".40"/>
+  <ellipse cx="0" cy="-1" rx="1.3" ry="11" fill="#8b949e" opacity=".55"/>
+</g>
 
 <g class="wrap">
-<!-- Titlebar -->
+
+<!-- ════════════════════════════════════
+     TITLEBAR
+════════════════════════════════════ -->
 <rect width="860" height="48" rx="12" class="bg2"/>
 <rect y="36" width="860" height="12" class="bg2"/>
 <circle cx="28" cy="24" r="5.5" fill="#f85149"/>
@@ -57,132 +109,209 @@
 <text x="430" y="29" font-family="monospace" font-size="12" class="muted" text-anchor="middle">WhiteRabbitCoder / profile</text>
 <line x1="0" y1="48" x2="860" y2="48" class="brd" stroke-width="1"/>
 
-<!-- Profile Header -->
-<text x="32" y="92" font-family="monospace" font-size="16" class="grn">❯</text>
-<text x="56" y="92" font-family="monospace" font-size="28" font-weight="bold" class="txt n1">Angelo Gaviria</text>
-<text x="311" y="92" font-family="monospace" font-size="28" class="acc cur">|</text>
-<text x="56" y="115" font-family="monospace" font-size="14" class="acc n2">Backend · Frontend · Flutter · AI Automation</text>
-<text x="56" y="135" font-family="monospace" font-size="12" class="muted n3">📍 Medellín, Colombia  ·  🎓 Computer Engineering, 6th semester  ·  🗣 ES / EN</text>
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<text x="32" y="96" font-family="monospace" font-size="17" class="grn">❯</text>
+<text x="57" y="96" font-family="monospace" font-size="29" font-weight="bold" class="txt n1">Angelo Gaviria</text>
+<text x="303" y="96" font-family="monospace" font-size="29" class="acc cur">|</text>
+<text x="57" y="121" font-family="monospace" font-size="14" class="acc n2">Backend · Frontend · Flutter · AI Automation</text>
+<text x="57" y="143" font-family="monospace" font-size="12" class="muted n3">📍 Medellín, Colombia  ·  🎓 CS Engineering, 6th semester  ·  🗣 ES / EN</text>
 
-<!-- Tech Stack section -->
-<line x1="32" y1="150" x2="828" y2="150" class="brd" stroke-width="1"/>
-<text x="32" y="163" font-family="monospace" font-size="10" class="muted" letter-spacing="1.5">TECH STACK</text>
+<!-- ════════════════════════════════════
+     ABOUT ME
+════════════════════════════════════ -->
+<g class="s-about">
+  <line x1="32" y1="167" x2="828" y2="167" class="brd" stroke-width="1"/>
+  <text x="32" y="181" font-family="monospace" font-size="10" class="sec-lbl">ABOUT ME</text>
 
-<!-- ROW 1: Languages -->
+  <text x="44" y="210" font-family="monospace" font-size="13" class="grn">·</text>
+  <text x="60" y="210" font-family="monospace" font-size="13" class="txt">🎓  CS Engineering, 6th sem. @ Politécnico Colombiano Jaime Isaza Cadavid</text>
+
+  <text x="44" y="233" font-family="monospace" font-size="13" class="grn">·</text>
+  <text x="60" y="233" font-family="monospace" font-size="13" class="txt">💻  Backend-first dev — Java · Spring Boot · scalable systems architecture</text>
+
+  <text x="44" y="256" font-family="monospace" font-size="13" class="grn">·</text>
+  <text x="60" y="256" font-family="monospace" font-size="13" class="txt">🎮  Game dev enthusiast — Roblox Studio &amp; Unity</text>
+
+  <text x="44" y="279" font-family="monospace" font-size="13" class="grn">·</text>
+  <text x="60" y="279" font-family="monospace" font-size="13" class="txt">🤖  Exploring AI ops — n8n · pgvector · LLMs</text>
+
+  <text x="44" y="302" font-family="monospace" font-size="13" class="grn">·</text>
+  <text x="60" y="302" font-family="monospace" font-size="13" class="txt">🤝  Open to collaborations, projects &amp; new challenges</text>
+</g>
+
+<!-- ════════════════════════════════════
+     TECH STACK
+════════════════════════════════════ -->
+<g class="s-stack">
+  <line x1="32" y1="326" x2="828" y2="326" class="brd" stroke-width="1"/>
+  <text x="32" y="340" font-family="monospace" font-size="10" class="sec-lbl">TECH STACK</text>
+  <text x="32" y="360" font-family="monospace" font-size="10" class="muted">· Languages</text>
+</g>
+
+<!-- Row 1: Languages -->
 <g class="br1">
-<rect x="32"  y="170" width="43" height="22" rx="4" fill="#EA2D2E" fill-opacity=".15" stroke="#EA2D2E" stroke-opacity=".5" stroke-width="1"/>
-<text x="40"  y="185" font-family="monospace" font-size="11" fill="#EA2D2E">Java</text>
-<rect x="83"  y="170" width="83" height="22" rx="4" fill="#3178C6" fill-opacity=".15" stroke="#3178C6" stroke-opacity=".5" stroke-width="1"/>
-<text x="91"  y="185" font-family="monospace" font-size="11" fill="#3178C6">TypeScript</text>
-<rect x="174" y="170" width="83" height="22" rx="4" fill="#F7DF1E" fill-opacity=".15" stroke="#F7DF1E" stroke-opacity=".5" stroke-width="1"/>
-<text x="182" y="185" font-family="monospace" font-size="11" fill="#c9a800">JavaScript</text>
-<rect x="265" y="170" width="56" height="22" rx="4" fill="#3776AB" fill-opacity=".15" stroke="#3776AB" stroke-opacity=".5" stroke-width="1"/>
-<text x="273" y="185" font-family="monospace" font-size="11" fill="#3776AB">Python</text>
-<rect x="329" y="170" width="43" height="22" rx="4" fill="#0175C2" fill-opacity=".15" stroke="#0175C2" stroke-opacity=".5" stroke-width="1"/>
-<text x="337" y="185" font-family="monospace" font-size="11" fill="#0175C2">Dart</text>
-<rect x="380" y="170" width="30" height="22" rx="4" fill="#9B4F96" fill-opacity=".15" stroke="#9B4F96" stroke-opacity=".5" stroke-width="1"/>
-<text x="388" y="185" font-family="monospace" font-size="11" fill="#9B4F96">C#</text>
-<rect x="418" y="170" width="37" height="22" rx="4" fill="#336791" fill-opacity=".15" stroke="#336791" stroke-opacity=".5" stroke-width="1"/>
-<text x="426" y="185" font-family="monospace" font-size="11" fill="#336791">SQL</text>
-<rect x="463" y="170" width="37" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
-<text x="471" y="185" font-family="monospace" font-size="11" fill="#8b949e">Lua</text>
+  <rect x="32"  y="368" width="43" height="22" rx="4" fill="#EA2D2E" fill-opacity=".14" stroke="#EA2D2E" stroke-opacity=".45" stroke-width="1"/>
+  <text x="40"  y="383" font-family="monospace" font-size="11" fill="#EA2D2E">Java</text>
+  <rect x="83"  y="368" width="83" height="22" rx="4" fill="#3178C6" fill-opacity=".14" stroke="#3178C6" stroke-opacity=".45" stroke-width="1"/>
+  <text x="91"  y="383" font-family="monospace" font-size="11" fill="#3178C6">TypeScript</text>
+  <rect x="174" y="368" width="83" height="22" rx="4" fill="#F7DF1E" fill-opacity=".14" stroke="#F7DF1E" stroke-opacity=".45" stroke-width="1"/>
+  <text x="182" y="383" font-family="monospace" font-size="11" class="t-js">JavaScript</text>
+  <rect x="265" y="368" width="56" height="22" rx="4" fill="#3776AB" fill-opacity=".14" stroke="#3776AB" stroke-opacity=".45" stroke-width="1"/>
+  <text x="273" y="383" font-family="monospace" font-size="11" fill="#3776AB">Python</text>
+  <rect x="329" y="368" width="43" height="22" rx="4" fill="#0175C2" fill-opacity=".14" stroke="#0175C2" stroke-opacity=".45" stroke-width="1"/>
+  <text x="337" y="383" font-family="monospace" font-size="11" fill="#0175C2">Dart</text>
+  <rect x="380" y="368" width="30" height="22" rx="4" fill="#9B4F96" fill-opacity=".14" stroke="#9B4F96" stroke-opacity=".45" stroke-width="1"/>
+  <text x="388" y="383" font-family="monospace" font-size="11" fill="#9B4F96">C#</text>
+  <rect x="418" y="368" width="37" height="22" rx="4" fill="#336791" fill-opacity=".14" stroke="#336791" stroke-opacity=".45" stroke-width="1"/>
+  <text x="426" y="383" font-family="monospace" font-size="11" fill="#5a8faf">SQL</text>
+  <rect x="463" y="368" width="37" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".35" stroke-width="1"/>
+  <text x="471" y="383" font-family="monospace" font-size="11" fill="#8b949e">Lua</text>
 </g>
 
-<!-- ROW 2: Backend Frameworks -->
+<text x="32" y="407" font-family="monospace" font-size="10" class="muted s-stack">· Backend</text>
+
+<!-- Row 2: Backend -->
 <g class="br2">
-<rect x="32"  y="200" width="90" height="22" rx="4" fill="#6DB33F" fill-opacity=".15" stroke="#6DB33F" stroke-opacity=".5" stroke-width="1"/>
-<text x="40"  y="215" font-family="monospace" font-size="11" fill="#6DB33F">Spring Boot</text>
-<rect x="130" y="200" width="56" height="22" rx="4" fill="#E0234E" fill-opacity=".15" stroke="#E0234E" stroke-opacity=".5" stroke-width="1"/>
-<text x="138" y="215" font-family="monospace" font-size="11" fill="#E0234E">NestJS</text>
-<rect x="194" y="200" width="63" height="22" rx="4" fill="#68A063" fill-opacity=".15" stroke="#68A063" stroke-opacity=".5" stroke-width="1"/>
-<text x="202" y="215" font-family="monospace" font-size="11" fill="#68A063">Node.js</text>
-<rect x="265" y="200" width="56" height="22" rx="4" fill="#512BD4" fill-opacity=".15" stroke="#512BD4" stroke-opacity=".5" stroke-width="1"/>
-<text x="273" y="215" font-family="monospace" font-size="11" fill="#9b75f0">.NET 9</text>
-<rect x="329" y="200" width="76" height="22" rx="4" fill="#BCAE79" fill-opacity=".15" stroke="#BCAE79" stroke-opacity=".4" stroke-width="1"/>
-<text x="337" y="215" font-family="monospace" font-size="11" fill="#BCAE79">Hibernate</text>
-<rect x="413" y="200" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
-<text x="421" y="215" font-family="monospace" font-size="11" fill="#8b949e">Prisma</text>
+  <rect x="32"  y="415" width="90" height="22" rx="4" fill="#6DB33F" fill-opacity=".14" stroke="#6DB33F" stroke-opacity=".45" stroke-width="1"/>
+  <text x="40"  y="430" font-family="monospace" font-size="11" fill="#6DB33F">Spring Boot</text>
+  <rect x="130" y="415" width="56" height="22" rx="4" fill="#E0234E" fill-opacity=".14" stroke="#E0234E" stroke-opacity=".45" stroke-width="1"/>
+  <text x="138" y="430" font-family="monospace" font-size="11" fill="#E0234E">NestJS</text>
+  <rect x="194" y="415" width="63" height="22" rx="4" fill="#68A063" fill-opacity=".14" stroke="#68A063" stroke-opacity=".45" stroke-width="1"/>
+  <text x="202" y="430" font-family="monospace" font-size="11" fill="#68A063">Node.js</text>
+  <rect x="265" y="415" width="56" height="22" rx="4" fill="#512BD4" fill-opacity=".14" stroke="#512BD4" stroke-opacity=".45" stroke-width="1"/>
+  <text x="273" y="430" font-family="monospace" font-size="11" fill="#9b75f0">.NET 9</text>
+  <rect x="329" y="415" width="76" height="22" rx="4" fill="#BCAE79" fill-opacity=".14" stroke="#BCAE79" stroke-opacity=".4" stroke-width="1"/>
+  <text x="337" y="430" font-family="monospace" font-size="11" fill="#BCAE79">Hibernate</text>
+  <rect x="413" y="415" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".35" stroke-width="1"/>
+  <text x="421" y="430" font-family="monospace" font-size="11" fill="#8b949e">Prisma</text>
 </g>
 
-<!-- ROW 3: Frontend -->
+<text x="32" y="454" font-family="monospace" font-size="10" class="muted s-stack">· Frontend &amp; Mobile</text>
+
+<!-- Row 3: Frontend -->
 <g class="br3">
-<rect x="32"  y="230" width="63" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
-<text x="40"  y="245" font-family="monospace" font-size="11" fill="#8b949e">Next.js</text>
-<rect x="103" y="230" width="50" height="22" rx="4" fill="#61DAFB" fill-opacity=".15" stroke="#61DAFB" stroke-opacity=".5" stroke-width="1"/>
-<text x="111" y="245" font-family="monospace" font-size="11" fill="#61DAFB">React</text>
-<rect x="161" y="230" width="50" height="22" rx="4" fill="#4FC08D" fill-opacity=".15" stroke="#4FC08D" stroke-opacity=".5" stroke-width="1"/>
-<text x="169" y="245" font-family="monospace" font-size="11" fill="#4FC08D">Vue 3</text>
-<rect x="219" y="230" width="63" height="22" rx="4" fill="#54C5F8" fill-opacity=".15" stroke="#54C5F8" stroke-opacity=".5" stroke-width="1"/>
-<text x="227" y="245" font-family="monospace" font-size="11" fill="#54C5F8">Flutter</text>
-<rect x="290" y="230" width="69" height="22" rx="4" fill="#00BCD4" fill-opacity=".15" stroke="#00BCD4" stroke-opacity=".5" stroke-width="1"/>
-<text x="298" y="245" font-family="monospace" font-size="11" fill="#00BCD4">Riverpod</text>
-<rect x="367" y="230" width="69" height="22" rx="4" fill="#06B6D4" fill-opacity=".15" stroke="#06B6D4" stroke-opacity=".5" stroke-width="1"/>
-<text x="375" y="245" font-family="monospace" font-size="11" fill="#06B6D4">Tailwind</text>
-<rect x="444" y="230" width="37" height="22" rx="4" fill="#EA4B71" fill-opacity=".15" stroke="#EA4B71" stroke-opacity=".5" stroke-width="1"/>
-<text x="452" y="245" font-family="monospace" font-size="11" fill="#EA4B71">n8n</text>
+  <rect x="32"  y="462" width="63" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".35" stroke-width="1"/>
+  <text x="40"  y="477" font-family="monospace" font-size="11" fill="#8b949e">Next.js</text>
+  <rect x="103" y="462" width="50" height="22" rx="4" fill="#61DAFB" fill-opacity=".14" stroke="#61DAFB" stroke-opacity=".45" stroke-width="1"/>
+  <text x="111" y="477" font-family="monospace" font-size="11" fill="#61DAFB">React</text>
+  <rect x="161" y="462" width="50" height="22" rx="4" fill="#4FC08D" fill-opacity=".14" stroke="#4FC08D" stroke-opacity=".45" stroke-width="1"/>
+  <text x="169" y="477" font-family="monospace" font-size="11" fill="#4FC08D">Vue 3</text>
+  <rect x="219" y="462" width="63" height="22" rx="4" fill="#54C5F8" fill-opacity=".14" stroke="#54C5F8" stroke-opacity=".45" stroke-width="1"/>
+  <text x="227" y="477" font-family="monospace" font-size="11" fill="#54C5F8">Flutter</text>
+  <rect x="290" y="462" width="69" height="22" rx="4" fill="#00BCD4" fill-opacity=".14" stroke="#00BCD4" stroke-opacity=".45" stroke-width="1"/>
+  <text x="298" y="477" font-family="monospace" font-size="11" fill="#00BCD4">Riverpod</text>
+  <rect x="367" y="462" width="69" height="22" rx="4" fill="#06B6D4" fill-opacity=".14" stroke="#06B6D4" stroke-opacity=".45" stroke-width="1"/>
+  <text x="375" y="477" font-family="monospace" font-size="11" fill="#06B6D4">Tailwind</text>
+  <rect x="444" y="462" width="37" height="22" rx="4" fill="#EA4B71" fill-opacity=".14" stroke="#EA4B71" stroke-opacity=".45" stroke-width="1"/>
+  <text x="452" y="477" font-family="monospace" font-size="11" fill="#EA4B71">n8n</text>
+  <rect x="489" y="462" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".35" stroke-width="1"/>
+  <text x="497" y="477" font-family="monospace" font-size="11" fill="#8b949e">Unity</text>
 </g>
 
-<!-- ROW 4: Databases & Cloud -->
+<text x="32" y="501" font-family="monospace" font-size="10" class="muted s-stack">· Databases &amp; Cloud</text>
+
+<!-- Row 4: Databases & Cloud -->
 <g class="br4">
-<rect x="32"  y="260" width="83" height="22" rx="4" fill="#336791" fill-opacity=".15" stroke="#336791" stroke-opacity=".5" stroke-width="1"/>
-<text x="40"  y="275" font-family="monospace" font-size="11" fill="#336791">PostgreSQL</text>
-<rect x="123" y="260" width="50" height="22" rx="4" fill="#4479A1" fill-opacity=".15" stroke="#4479A1" stroke-opacity=".5" stroke-width="1"/>
-<text x="131" y="275" font-family="monospace" font-size="11" fill="#4479A1">MySQL</text>
-<rect x="181" y="260" width="69" height="22" rx="4" fill="#FFA000" fill-opacity=".15" stroke="#FFA000" stroke-opacity=".5" stroke-width="1"/>
-<text x="189" y="275" font-family="monospace" font-size="11" fill="#FFA000">Firebase</text>
-<rect x="258" y="260" width="69" height="22" rx="4" fill="#3ECF8E" fill-opacity=".15" stroke="#3ECF8E" stroke-opacity=".5" stroke-width="1"/>
-<text x="266" y="275" font-family="monospace" font-size="11" fill="#3ECF8E">Supabase</text>
-<rect x="335" y="260" width="56" height="22" rx="4" fill="#2496ED" fill-opacity=".15" stroke="#2496ED" stroke-opacity=".5" stroke-width="1"/>
-<text x="343" y="275" font-family="monospace" font-size="11" fill="#2496ED">Docker</text>
-<rect x="399" y="260" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
-<text x="407" y="275" font-family="monospace" font-size="11" fill="#8b949e">Vercel</text>
-<rect x="463" y="260" width="69" height="22" rx="4" fill="#336791" fill-opacity=".1" stroke="#336791" stroke-opacity=".4" stroke-width="1"/>
-<text x="471" y="275" font-family="monospace" font-size="11" fill="#5a8faf">pgvector</text>
+  <rect x="32"  y="509" width="83" height="22" rx="4" fill="#336791" fill-opacity=".14" stroke="#336791" stroke-opacity=".45" stroke-width="1"/>
+  <text x="40"  y="524" font-family="monospace" font-size="11" fill="#336791">PostgreSQL</text>
+  <rect x="123" y="509" width="50" height="22" rx="4" fill="#4479A1" fill-opacity=".14" stroke="#4479A1" stroke-opacity=".45" stroke-width="1"/>
+  <text x="131" y="524" font-family="monospace" font-size="11" fill="#4479A1">MySQL</text>
+  <rect x="181" y="509" width="69" height="22" rx="4" fill="#FFA000" fill-opacity=".14" stroke="#FFA000" stroke-opacity=".45" stroke-width="1"/>
+  <text x="189" y="524" font-family="monospace" font-size="11" fill="#FFA000">Firebase</text>
+  <rect x="258" y="509" width="69" height="22" rx="4" fill="#3ECF8E" fill-opacity=".14" stroke="#3ECF8E" stroke-opacity=".45" stroke-width="1"/>
+  <text x="266" y="524" font-family="monospace" font-size="11" fill="#3ECF8E">Supabase</text>
+  <rect x="335" y="509" width="56" height="22" rx="4" fill="#2496ED" fill-opacity=".14" stroke="#2496ED" stroke-opacity=".45" stroke-width="1"/>
+  <text x="343" y="524" font-family="monospace" font-size="11" fill="#2496ED">Docker</text>
+  <rect x="399" y="509" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".35" stroke-width="1"/>
+  <text x="407" y="524" font-family="monospace" font-size="11" fill="#8b949e">Vercel</text>
+  <rect x="463" y="509" width="69" height="22" rx="4" fill="#336791" fill-opacity=".1" stroke="#336791" stroke-opacity=".35" stroke-width="1"/>
+  <text x="471" y="524" font-family="monospace" font-size="11" fill="#5a8faf">pgvector</text>
 </g>
 
-<!-- Featured Projects section -->
-<line x1="32" y1="295" x2="828" y2="295" class="brd" stroke-width="1"/>
-<text x="32" y="308" font-family="monospace" font-size="10" class="muted" letter-spacing="1.5">FEATURED PROJECTS</text>
+<!-- ════════════════════════════════════
+     FEATURED PROJECTS
+════════════════════════════════════ -->
+<g class="s-proj">
+  <line x1="32" y1="548" x2="828" y2="548" class="brd" stroke-width="1"/>
+  <text x="32" y="562" font-family="monospace" font-size="10" class="sec-lbl">FEATURED PROJECTS</text>
+</g>
 
-<!-- Cards row 1 -->
+<!-- Cards row 1 (3 cards) — y=574, h=88 -->
 <g class="p1">
-<rect x="32"  y="316" width="257" height="80" rx="6" fill="#3fb950" fill-opacity=".06" stroke="#3fb950" stroke-opacity=".25" stroke-width="1"/>
-<text x="44"  y="334" font-family="monospace" font-size="12" font-weight="bold" fill="#3fb950">🌱 Gossip Garden</text>
-<text x="44"  y="350" font-family="monospace" font-size="10" fill="#8b949e">Flutter · Dart · Riverpod · Clean Arch</text>
-<text x="44"  y="364" font-family="monospace" font-size="10" fill="#8b949e">Plant care social app w/ sensor monitoring</text>
-<text x="44"  y="378" font-family="monospace" font-size="9"  fill="#3fb950" opacity=".6">collab → Danieloid3/Shadow_Protocol</text>
+  <rect x="32"  y="574" width="257" height="88" rx="6" fill="#3fb950" fill-opacity=".05" stroke="#3fb950" stroke-opacity=".22" stroke-width="1"/>
+  <rect x="33"  y="575" width="3"   height="86" rx="1" fill="#3fb950" fill-opacity=".55"/>
+  <text x="47"  y="593" font-family="monospace" font-size="12" font-weight="bold" fill="#3fb950">🌱 Gossip Garden</text>
+  <text x="47"  y="609" font-family="monospace" font-size="10" fill="#8b949e">Flutter · Dart · Riverpod</text>
+  <text x="47"  y="624" font-family="monospace" font-size="10" fill="#8b949e">Plant care social app</text>
+  <text x="47"  y="639" font-family="monospace" font-size="10" fill="#8b949e">w/ sensors, feed &amp; dashboard</text>
+  <text x="47"  y="654" font-family="monospace" font-size="9"  fill="#3fb950" opacity=".5">↳ Danieloid3/Shadow_Protocol</text>
 </g>
 
 <g class="p2">
-<rect x="301" y="316" width="257" height="80" rx="6" fill="#58a6ff" fill-opacity=".06" stroke="#58a6ff" stroke-opacity=".25" stroke-width="1"/>
-<text x="313" y="334" font-family="monospace" font-size="12" font-weight="bold" fill="#58a6ff">🐾 petcare-ops</text>
-<text x="313" y="350" font-family="monospace" font-size="10" fill="#8b949e">n8n · pgvector · Next.js · TypeScript</text>
-<text x="313" y="364" font-family="monospace" font-size="10" fill="#8b949e">Multi-channel AI ops center for vet clinic</text>
-<text x="313" y="378" font-family="monospace" font-size="9"  fill="#58a6ff" opacity=".6">Private repo</text>
+  <rect x="301" y="574" width="257" height="88" rx="6" fill="#58a6ff" fill-opacity=".05" stroke="#58a6ff" stroke-opacity=".22" stroke-width="1"/>
+  <rect x="302" y="575" width="3"   height="86" rx="1" fill="#58a6ff" fill-opacity=".55"/>
+  <text x="316" y="593" font-family="monospace" font-size="12" font-weight="bold" fill="#58a6ff">🐾 petcare-ops</text>
+  <text x="316" y="609" font-family="monospace" font-size="10" fill="#8b949e">n8n · pgvector · Next.js · AI</text>
+  <text x="316" y="624" font-family="monospace" font-size="10" fill="#8b949e">Multi-channel AI ops center</text>
+  <text x="316" y="639" font-family="monospace" font-size="10" fill="#8b949e">for veterinary clinic</text>
+  <text x="316" y="654" font-family="monospace" font-size="9"  fill="#58a6ff" opacity=".5">↳ Private repo</text>
 </g>
 
 <g class="p3">
-<rect x="570" y="316" width="258" height="80" rx="6" fill="#f0883e" fill-opacity=".06" stroke="#f0883e" stroke-opacity=".25" stroke-width="1"/>
-<text x="582" y="334" font-family="monospace" font-size="12" font-weight="bold" fill="#f0883e">🎬 Trama</text>
-<text x="582" y="350" font-family="monospace" font-size="10" fill="#8b949e">Spring Boot · Next.js · Firebase</text>
-<text x="582" y="364" font-family="monospace" font-size="10" fill="#8b949e">Movie social network w/ realtime chat</text>
-<text x="582" y="378" font-family="monospace" font-size="9"  fill="#f0883e" opacity=".6">WhiteRabbitCoder/TramaBack</text>
+  <rect x="570" y="574" width="258" height="88" rx="6" fill="#f0883e" fill-opacity=".05" stroke="#f0883e" stroke-opacity=".22" stroke-width="1"/>
+  <rect x="571" y="575" width="3"   height="86" rx="1" fill="#f0883e" fill-opacity=".55"/>
+  <text x="585" y="593" font-family="monospace" font-size="12" font-weight="bold" fill="#f0883e">🎬 Trama</text>
+  <text x="585" y="609" font-family="monospace" font-size="10" fill="#8b949e">Spring Boot · Next.js · Firebase</text>
+  <text x="585" y="624" font-family="monospace" font-size="10" fill="#8b949e">Movie social network</text>
+  <text x="585" y="639" font-family="monospace" font-size="10" fill="#8b949e">likes, lists, realtime chat</text>
+  <text x="585" y="654" font-family="monospace" font-size="9"  fill="#f0883e" opacity=".5">↳ WhiteRabbitCoder/TramaBack</text>
 </g>
 
-<!-- Cards row 2 -->
+<!-- Cards row 2 (2 cards) — y=672, h=88 -->
 <g class="p4">
-<rect x="32"  y="406" width="392" height="66" rx="6" fill="#e3b341" fill-opacity=".06" stroke="#e3b341" stroke-opacity=".25" stroke-width="1"/>
-<text x="44"  y="424" font-family="monospace" font-size="12" font-weight="bold" fill="#e3b341">📊 Promise</text>
-<text x="44"  y="440" font-family="monospace" font-size="10" fill="#8b949e">JavaScript · Python · HTML/CSS</text>
-<text x="44"  y="455" font-family="monospace" font-size="10" fill="#8b949e">Platform ecosystem: landing · dashboard · meta repo</text>
+  <rect x="32"  y="672" width="392" height="88" rx="6" fill="#e3b341" fill-opacity=".05" stroke="#e3b341" stroke-opacity=".22" stroke-width="1"/>
+  <rect x="33"  y="673" width="3"   height="86" rx="1" fill="#e3b341" fill-opacity=".55"/>
+  <text x="47"  y="691" font-family="monospace" font-size="12" font-weight="bold" fill="#e3b341">📊 Promise</text>
+  <text x="47"  y="707" font-family="monospace" font-size="10" fill="#8b949e">JavaScript · Python · HTML / CSS</text>
+  <text x="47"  y="722" font-family="monospace" font-size="10" fill="#8b949e">Platform ecosystem — landing page · dashboard · meta repo</text>
+  <text x="47"  y="737" font-family="monospace" font-size="10" fill="#8b949e">Modular architecture with Sofia voice layer</text>
+  <text x="47"  y="752" font-family="monospace" font-size="9"  fill="#e3b341" opacity=".5">↳ PromiseLandingPage · iPromiseDashboard · PromiseMetaRepo</text>
 </g>
 
 <g class="p5">
-<rect x="436" y="406" width="392" height="66" rx="6" fill="#bc8cff" fill-opacity=".06" stroke="#bc8cff" stroke-opacity=".25" stroke-width="1"/>
-<text x="448" y="424" font-family="monospace" font-size="12" font-weight="bold" fill="#bc8cff">🔧 BidCalculator</text>
-<text x="448" y="440" font-family="monospace" font-size="10" fill="#8b949e">.NET 9 · Vue 3 · C# · Unit Testing</text>
-<text x="448" y="455" font-family="monospace" font-size="10" fill="#8b949e">Vehicle bid fee calculator — clean OOP architecture</text>
+  <rect x="436" y="672" width="392" height="88" rx="6" fill="#bc8cff" fill-opacity=".05" stroke="#bc8cff" stroke-opacity=".22" stroke-width="1"/>
+  <rect x="437" y="673" width="3"   height="86" rx="1" fill="#bc8cff" fill-opacity=".55"/>
+  <text x="451" y="691" font-family="monospace" font-size="12" font-weight="bold" fill="#bc8cff">🔧 BidCalculator</text>
+  <text x="451" y="707" font-family="monospace" font-size="10" fill="#8b949e">.NET 9 · Vue 3 · C# · Unit Testing</text>
+  <text x="451" y="722" font-family="monospace" font-size="10" fill="#8b949e">Vehicle bid fee calculator</text>
+  <text x="451" y="737" font-family="monospace" font-size="10" fill="#8b949e">Clean OOP architecture · validation · test suite</text>
+  <text x="451" y="752" font-family="monospace" font-size="9"  fill="#bc8cff" opacity=".5">↳ WhiteRabbitCoder/BidCalculator</text>
 </g>
 
+<!-- ════════════════════════════════════
+     CONNECT
+════════════════════════════════════ -->
+<g class="s-conn">
+  <line x1="32" y1="774" x2="828" y2="774" class="brd" stroke-width="1"/>
+  <text x="32" y="788" font-family="monospace" font-size="10" class="sec-lbl">LET'S CONNECT</text>
+
+  <!-- LinkedIn button -->
+  <rect x="232" y="802" width="126" height="34" rx="6" fill="#0077B5" fill-opacity=".14" stroke="#0077B5" stroke-opacity=".45" stroke-width="1"/>
+  <text x="261" y="824" font-family="monospace" font-size="12" fill="#0077B5">in  LinkedIn</text>
+
+  <!-- Gmail button -->
+  <rect x="370" y="802" width="120" height="34" rx="6" fill="#D14836" fill-opacity=".14" stroke="#D14836" stroke-opacity=".45" stroke-width="1"/>
+  <text x="400" y="824" font-family="monospace" font-size="12" fill="#D14836">✉  Gmail</text>
+
+  <!-- GitHub button -->
+  <rect x="502" y="802" width="126" height="34" rx="6" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".38" stroke-width="1"/>
+  <text x="531" y="824" font-family="monospace" font-size="12" fill="#8b949e">⌥  GitHub</text>
+
+  <!-- subtle Alice / white rabbit footer -->
+  <text x="430" y="852" font-family="monospace" font-size="9" fill="#3fb950" opacity=".12" text-anchor="middle" font-style="italic">follow the white rabbit...</text>
 </g>
+
+</g><!-- end .wrap -->
 </svg>
