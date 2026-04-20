@@ -1,47 +1,47 @@
-<h1 align="center">Hola 👋, soy Angelo Gaviria</h1>
+<h1 align="center">Hey there 👋, I'm Angelo Gaviria</h1>
 <p align="center">
   <a href="https://github.com/WhiteRabbitCoder">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=480&lines=Backend+Dev+%7C+Java+%26+Spring;Frontend+Dev+%7C+Next.js+%26+React;Pasi%C3%B3n+por+educaci%C3%B3n+y+tecnolog%C3%ADa" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2684FF&center=true&vCenter=true&width=480&lines=Backend+Dev+%7C+Java+%26+Spring;Frontend+Dev+%7C+Next.js+%26+React;Passionate+about+education+%26+tech" alt="Typing SVG" />
   </a>
 </p>
 
 ---
 
-### 🧠 Sobre mí
+### 🧠 About me
 
-🎓 Estudiante de Ingeniería Informática — 6° semestre  
-💻 Apasionado por el desarrollo backend con Java y el diseño de sistemas web escalables  
-🎮 Fan del desarrollo de videojuegos (Roblox Studio, Unity)  
+🎓 Computer Engineering student — 6th semester  
+💻 Passionate about backend development with Java and scalable web systems design  
+🎮 Game development enthusiast (Roblox Studio, Unity)  
 📍 Medellín, Colombia  
-🗣 Español (nativo), Inglés (B2)  
+🗣 Spanish (native), English (B2)  
 
 ---
 
-### 🧰 Stack Tecnológico
+### 🧰 Tech Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,python,lua,js,ts,html,css,spring,nodejs,react,nextjs,prisma,hibernate,tailwind,mysql,postgres,supabase,firebase,git,github,docker,vscode,idea,postman,figma,vercel,unity,insomnia,cpp" alt="Stack Tecnológico" />
+    <img src="https://skillicons.dev/icons?i=java,python,lua,js,ts,html,css,spring,nodejs,react,nextjs,prisma,hibernate,tailwind,mysql,postgres,supabase,firebase,git,github,docker,vscode,idea,postman,figma,vercel,unity,insomnia,cpp" alt="Tech Stack" />
   </a>
 </p>
 
 ---
 
-### 🚀 Proyectos destacados
+### 🚀 Featured Projects
 
-🔗 Todos los proyectos están en: [github.com/WhiteRabbitCoder](https://github.com/WhiteRabbitCoder)
+🔗 All projects available at: [github.com/WhiteRabbitCoder](https://github.com/WhiteRabbitCoder)
 
-- **🎬 Trama – Red social de películas**  
-  Fullstack con Spring Boot y Next.js. Incluye login, likes, comentarios, listas personalizadas y seguidores. Chat en tiempo real con Firebase en desarrollo.
+- **🎬 Trama – Movie Social Network**  
+  Fullstack app with Spring Boot and Next.js. Features login, likes, comments, custom lists, and followers. Real-time chat with Firebase in progress.
 
-- **🧇 Waffles Restaurant – Tienda virtual**  
-  Web app con Spring Boot y Thymeleaf. Carrito de compras, panel administrativo y base para integrar pasarela de pagos.
+- **🧇 Waffles Restaurant – Online Store**  
+  Web app built with Spring Boot and Thymeleaf. Shopping cart, admin panel, and payment gateway integration ready.
 
-- **📚 Sistema de gestión de biblioteca**  
-  CRUD completo con Node.js + Prisma (backend) y Next.js (frontend). Incluye vista admin, control de devoluciones y despliegue en Railway/Vercel.
+- **📚 Library Management System**  
+  Full CRUD with Node.js + Prisma (backend) and Next.js (frontend). Includes admin view, return control, and deployment on Railway/Vercel.
 
-- **🧮 App contable de escritorio**  
-  Interfaz gráfica en Python para calcular precios con IVA y márgenes. Exportable como `.exe`.
+- **🧮 Desktop Accounting App**  
+  Python GUI for calculating prices with VAT and margins. Exportable as `.exe`.
 
 ---
 
@@ -58,7 +58,7 @@
 
 ---
 
-### 🤝 Conecta conmigo
+### 🤝 Connect with me
 
 <p align="center">
   <a href="https://www.linkedin.com/in/gaviria-marin/"><img width="120px" alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn%20-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a> &nbsp;
@@ -68,4 +68,4 @@
 
 ---
 
-_Gracias por visitar mi perfil. Siempre estoy abierto a nuevos desafíos, colaboraciones y oportunidades 🚀_
+_Thanks for visiting my profile. I'm always open to new challenges, collaborations, and opportunities 🚀_
