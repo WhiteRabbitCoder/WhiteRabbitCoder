@@ -1,0 +1,188 @@
+<svg width="860" height="480" viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.wrap{animation:fadeIn .5s ease}
+.n1{animation:slideIn .6s .1s both}
+.n2{animation:slideIn .6s .25s both}
+.n3{animation:slideIn .6s .4s both}
+.cur{animation:blink 1s step-end infinite}
+.br1{animation:fadeIn .5s .55s both}
+.br2{animation:fadeIn .5s .75s both}
+.br3{animation:fadeIn .5s .95s both}
+.br4{animation:fadeIn .5s 1.15s both}
+.p1{animation:fadeIn .5s 1.4s both}
+.p2{animation:fadeIn .5s 1.6s both}
+.p3{animation:fadeIn .5s 1.8s both}
+.p4{animation:fadeIn .5s 2.0s both}
+.p5{animation:fadeIn .5s 2.2s both}
+.bg{fill:#0d1117}
+.bg2{fill:#161b22}
+.brd{stroke:#30363d}
+.txt{fill:#e6edf3}
+.muted{fill:#8b949e}
+.acc{fill:#58a6ff}
+.grn{fill:#3fb950}
+@media(prefers-color-scheme:light){
+.bg{fill:#ffffff}
+.bg2{fill:#f6f8fa}
+.brd{stroke:#d0d7de}
+.txt{fill:#24292f}
+.muted{fill:#57606a}
+.acc{fill:#0969da}
+.grn{fill:#1a7f37}
+}
+</style>
+<linearGradient id="g1" x1="0%" x2="100%">
+<stop offset="0%" stop-color="#58a6ff"/>
+<stop offset="50%" stop-color="#bc8cff"/>
+<stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="860" height="480" rx="12" class="bg"/>
+<rect x=".5" y=".5" width="859" height="479" rx="11.5" fill="none" class="brd" stroke-width="1"/>
+<rect width="860" height="3" rx="2" fill="url(#g1)"/>
+
+<g class="wrap">
+<!-- Titlebar -->
+<rect width="860" height="48" rx="12" class="bg2"/>
+<rect y="36" width="860" height="12" class="bg2"/>
+<circle cx="28" cy="24" r="5.5" fill="#f85149"/>
+<circle cx="46" cy="24" r="5.5" fill="#e3b341"/>
+<circle cx="64" cy="24" r="5.5" fill="#3fb950"/>
+<text x="430" y="29" font-family="monospace" font-size="12" class="muted" text-anchor="middle">WhiteRabbitCoder / profile</text>
+<line x1="0" y1="48" x2="860" y2="48" class="brd" stroke-width="1"/>
+
+<!-- Profile Header -->
+<text x="32" y="92" font-family="monospace" font-size="16" class="grn">❯</text>
+<text x="56" y="92" font-family="monospace" font-size="28" font-weight="bold" class="txt n1">Angelo Gaviria</text>
+<text x="311" y="92" font-family="monospace" font-size="28" class="acc cur">|</text>
+<text x="56" y="115" font-family="monospace" font-size="14" class="acc n2">Backend · Frontend · Flutter · AI Automation</text>
+<text x="56" y="135" font-family="monospace" font-size="12" class="muted n3">📍 Medellín, Colombia  ·  🎓 Computer Engineering, 6th semester  ·  🗣 ES / EN</text>
+
+<!-- Tech Stack section -->
+<line x1="32" y1="150" x2="828" y2="150" class="brd" stroke-width="1"/>
+<text x="32" y="163" font-family="monospace" font-size="10" class="muted" letter-spacing="1.5">TECH STACK</text>
+
+<!-- ROW 1: Languages -->
+<g class="br1">
+<rect x="32"  y="170" width="43" height="22" rx="4" fill="#EA2D2E" fill-opacity=".15" stroke="#EA2D2E" stroke-opacity=".5" stroke-width="1"/>
+<text x="40"  y="185" font-family="monospace" font-size="11" fill="#EA2D2E">Java</text>
+<rect x="83"  y="170" width="83" height="22" rx="4" fill="#3178C6" fill-opacity=".15" stroke="#3178C6" stroke-opacity=".5" stroke-width="1"/>
+<text x="91"  y="185" font-family="monospace" font-size="11" fill="#3178C6">TypeScript</text>
+<rect x="174" y="170" width="83" height="22" rx="4" fill="#F7DF1E" fill-opacity=".15" stroke="#F7DF1E" stroke-opacity=".5" stroke-width="1"/>
+<text x="182" y="185" font-family="monospace" font-size="11" fill="#c9a800">JavaScript</text>
+<rect x="265" y="170" width="56" height="22" rx="4" fill="#3776AB" fill-opacity=".15" stroke="#3776AB" stroke-opacity=".5" stroke-width="1"/>
+<text x="273" y="185" font-family="monospace" font-size="11" fill="#3776AB">Python</text>
+<rect x="329" y="170" width="43" height="22" rx="4" fill="#0175C2" fill-opacity=".15" stroke="#0175C2" stroke-opacity=".5" stroke-width="1"/>
+<text x="337" y="185" font-family="monospace" font-size="11" fill="#0175C2">Dart</text>
+<rect x="380" y="170" width="30" height="22" rx="4" fill="#9B4F96" fill-opacity=".15" stroke="#9B4F96" stroke-opacity=".5" stroke-width="1"/>
+<text x="388" y="185" font-family="monospace" font-size="11" fill="#9B4F96">C#</text>
+<rect x="418" y="170" width="37" height="22" rx="4" fill="#336791" fill-opacity=".15" stroke="#336791" stroke-opacity=".5" stroke-width="1"/>
+<text x="426" y="185" font-family="monospace" font-size="11" fill="#336791">SQL</text>
+<rect x="463" y="170" width="37" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
+<text x="471" y="185" font-family="monospace" font-size="11" fill="#8b949e">Lua</text>
+</g>
+
+<!-- ROW 2: Backend Frameworks -->
+<g class="br2">
+<rect x="32"  y="200" width="90" height="22" rx="4" fill="#6DB33F" fill-opacity=".15" stroke="#6DB33F" stroke-opacity=".5" stroke-width="1"/>
+<text x="40"  y="215" font-family="monospace" font-size="11" fill="#6DB33F">Spring Boot</text>
+<rect x="130" y="200" width="56" height="22" rx="4" fill="#E0234E" fill-opacity=".15" stroke="#E0234E" stroke-opacity=".5" stroke-width="1"/>
+<text x="138" y="215" font-family="monospace" font-size="11" fill="#E0234E">NestJS</text>
+<rect x="194" y="200" width="63" height="22" rx="4" fill="#68A063" fill-opacity=".15" stroke="#68A063" stroke-opacity=".5" stroke-width="1"/>
+<text x="202" y="215" font-family="monospace" font-size="11" fill="#68A063">Node.js</text>
+<rect x="265" y="200" width="56" height="22" rx="4" fill="#512BD4" fill-opacity=".15" stroke="#512BD4" stroke-opacity=".5" stroke-width="1"/>
+<text x="273" y="215" font-family="monospace" font-size="11" fill="#9b75f0">.NET 9</text>
+<rect x="329" y="200" width="76" height="22" rx="4" fill="#BCAE79" fill-opacity=".15" stroke="#BCAE79" stroke-opacity=".4" stroke-width="1"/>
+<text x="337" y="215" font-family="monospace" font-size="11" fill="#BCAE79">Hibernate</text>
+<rect x="413" y="200" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
+<text x="421" y="215" font-family="monospace" font-size="11" fill="#8b949e">Prisma</text>
+</g>
+
+<!-- ROW 3: Frontend -->
+<g class="br3">
+<rect x="32"  y="230" width="63" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
+<text x="40"  y="245" font-family="monospace" font-size="11" fill="#8b949e">Next.js</text>
+<rect x="103" y="230" width="50" height="22" rx="4" fill="#61DAFB" fill-opacity=".15" stroke="#61DAFB" stroke-opacity=".5" stroke-width="1"/>
+<text x="111" y="245" font-family="monospace" font-size="11" fill="#61DAFB">React</text>
+<rect x="161" y="230" width="50" height="22" rx="4" fill="#4FC08D" fill-opacity=".15" stroke="#4FC08D" stroke-opacity=".5" stroke-width="1"/>
+<text x="169" y="245" font-family="monospace" font-size="11" fill="#4FC08D">Vue 3</text>
+<rect x="219" y="230" width="63" height="22" rx="4" fill="#54C5F8" fill-opacity=".15" stroke="#54C5F8" stroke-opacity=".5" stroke-width="1"/>
+<text x="227" y="245" font-family="monospace" font-size="11" fill="#54C5F8">Flutter</text>
+<rect x="290" y="230" width="69" height="22" rx="4" fill="#00BCD4" fill-opacity=".15" stroke="#00BCD4" stroke-opacity=".5" stroke-width="1"/>
+<text x="298" y="245" font-family="monospace" font-size="11" fill="#00BCD4">Riverpod</text>
+<rect x="367" y="230" width="69" height="22" rx="4" fill="#06B6D4" fill-opacity=".15" stroke="#06B6D4" stroke-opacity=".5" stroke-width="1"/>
+<text x="375" y="245" font-family="monospace" font-size="11" fill="#06B6D4">Tailwind</text>
+<rect x="444" y="230" width="37" height="22" rx="4" fill="#EA4B71" fill-opacity=".15" stroke="#EA4B71" stroke-opacity=".5" stroke-width="1"/>
+<text x="452" y="245" font-family="monospace" font-size="11" fill="#EA4B71">n8n</text>
+</g>
+
+<!-- ROW 4: Databases & Cloud -->
+<g class="br4">
+<rect x="32"  y="260" width="83" height="22" rx="4" fill="#336791" fill-opacity=".15" stroke="#336791" stroke-opacity=".5" stroke-width="1"/>
+<text x="40"  y="275" font-family="monospace" font-size="11" fill="#336791">PostgreSQL</text>
+<rect x="123" y="260" width="50" height="22" rx="4" fill="#4479A1" fill-opacity=".15" stroke="#4479A1" stroke-opacity=".5" stroke-width="1"/>
+<text x="131" y="275" font-family="monospace" font-size="11" fill="#4479A1">MySQL</text>
+<rect x="181" y="260" width="69" height="22" rx="4" fill="#FFA000" fill-opacity=".15" stroke="#FFA000" stroke-opacity=".5" stroke-width="1"/>
+<text x="189" y="275" font-family="monospace" font-size="11" fill="#FFA000">Firebase</text>
+<rect x="258" y="260" width="69" height="22" rx="4" fill="#3ECF8E" fill-opacity=".15" stroke="#3ECF8E" stroke-opacity=".5" stroke-width="1"/>
+<text x="266" y="275" font-family="monospace" font-size="11" fill="#3ECF8E">Supabase</text>
+<rect x="335" y="260" width="56" height="22" rx="4" fill="#2496ED" fill-opacity=".15" stroke="#2496ED" stroke-opacity=".5" stroke-width="1"/>
+<text x="343" y="275" font-family="monospace" font-size="11" fill="#2496ED">Docker</text>
+<rect x="399" y="260" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".4" stroke-width="1"/>
+<text x="407" y="275" font-family="monospace" font-size="11" fill="#8b949e">Vercel</text>
+<rect x="463" y="260" width="69" height="22" rx="4" fill="#336791" fill-opacity=".1" stroke="#336791" stroke-opacity=".4" stroke-width="1"/>
+<text x="471" y="275" font-family="monospace" font-size="11" fill="#5a8faf">pgvector</text>
+</g>
+
+<!-- Featured Projects section -->
+<line x1="32" y1="295" x2="828" y2="295" class="brd" stroke-width="1"/>
+<text x="32" y="308" font-family="monospace" font-size="10" class="muted" letter-spacing="1.5">FEATURED PROJECTS</text>
+
+<!-- Cards row 1 -->
+<g class="p1">
+<rect x="32"  y="316" width="257" height="80" rx="6" fill="#3fb950" fill-opacity=".06" stroke="#3fb950" stroke-opacity=".25" stroke-width="1"/>
+<text x="44"  y="334" font-family="monospace" font-size="12" font-weight="bold" fill="#3fb950">🌱 Gossip Garden</text>
+<text x="44"  y="350" font-family="monospace" font-size="10" fill="#8b949e">Flutter · Dart · Riverpod · Clean Arch</text>
+<text x="44"  y="364" font-family="monospace" font-size="10" fill="#8b949e">Plant care social app w/ sensor monitoring</text>
+<text x="44"  y="378" font-family="monospace" font-size="9"  fill="#3fb950" opacity=".6">collab → Danieloid3/Shadow_Protocol</text>
+</g>
+
+<g class="p2">
+<rect x="301" y="316" width="257" height="80" rx="6" fill="#58a6ff" fill-opacity=".06" stroke="#58a6ff" stroke-opacity=".25" stroke-width="1"/>
+<text x="313" y="334" font-family="monospace" font-size="12" font-weight="bold" fill="#58a6ff">🐾 petcare-ops</text>
+<text x="313" y="350" font-family="monospace" font-size="10" fill="#8b949e">n8n · pgvector · Next.js · TypeScript</text>
+<text x="313" y="364" font-family="monospace" font-size="10" fill="#8b949e">Multi-channel AI ops center for vet clinic</text>
+<text x="313" y="378" font-family="monospace" font-size="9"  fill="#58a6ff" opacity=".6">Private repo</text>
+</g>
+
+<g class="p3">
+<rect x="570" y="316" width="258" height="80" rx="6" fill="#f0883e" fill-opacity=".06" stroke="#f0883e" stroke-opacity=".25" stroke-width="1"/>
+<text x="582" y="334" font-family="monospace" font-size="12" font-weight="bold" fill="#f0883e">🎬 Trama</text>
+<text x="582" y="350" font-family="monospace" font-size="10" fill="#8b949e">Spring Boot · Next.js · Firebase</text>
+<text x="582" y="364" font-family="monospace" font-size="10" fill="#8b949e">Movie social network w/ realtime chat</text>
+<text x="582" y="378" font-family="monospace" font-size="9"  fill="#f0883e" opacity=".6">WhiteRabbitCoder/TramaBack</text>
+</g>
+
+<!-- Cards row 2 -->
+<g class="p4">
+<rect x="32"  y="406" width="392" height="66" rx="6" fill="#e3b341" fill-opacity=".06" stroke="#e3b341" stroke-opacity=".25" stroke-width="1"/>
+<text x="44"  y="424" font-family="monospace" font-size="12" font-weight="bold" fill="#e3b341">📊 Promise</text>
+<text x="44"  y="440" font-family="monospace" font-size="10" fill="#8b949e">JavaScript · Python · HTML/CSS</text>
+<text x="44"  y="455" font-family="monospace" font-size="10" fill="#8b949e">Platform ecosystem: landing · dashboard · meta repo</text>
+</g>
+
+<g class="p5">
+<rect x="436" y="406" width="392" height="66" rx="6" fill="#bc8cff" fill-opacity=".06" stroke="#bc8cff" stroke-opacity=".25" stroke-width="1"/>
+<text x="448" y="424" font-family="monospace" font-size="12" font-weight="bold" fill="#bc8cff">🔧 BidCalculator</text>
+<text x="448" y="440" font-family="monospace" font-size="10" fill="#8b949e">.NET 9 · Vue 3 · C# · Unit Testing</text>
+<text x="448" y="455" font-family="monospace" font-size="10" fill="#8b949e">Vehicle bid fee calculator — clean OOP architecture</text>
+</g>
+
+</g>
+</svg>

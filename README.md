@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.svg" alt="Angelo Gaviria — profile banner" width="860"/>
+</p>
+
 <h1 align="center">Hey there 👋, I'm Angelo Gaviria</h1>
 <p align="center">
   <a href="https://github.com/WhiteRabbitCoder">
