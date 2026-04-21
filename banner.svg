@@ -1,361 +1,257 @@
-<svg width="860" height="1120" viewBox="0 0 860 1120" xmlns="http://www.w3.org/2000/svg">
+<svg width="860" height="960" viewBox="0 0 860 960" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes slideIn{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:translateX(0)}}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-@keyframes breathe{0%,100%{opacity:.027}50%{opacity:.054}}
-@keyframes breathe2{0%,100%{opacity:.020}50%{opacity:.042}}
-@keyframes flutter{0%,100%{opacity:.05;transform:translateY(0) rotate(0deg)}50%{opacity:.085;transform:translateY(-5px) rotate(4deg)}}
-@keyframes flutter2{0%,100%{opacity:.04;transform:translateY(0) rotate(0deg)}50%{opacity:.07;transform:translateY(-4px) rotate(-3deg)}}
-@keyframes flutter3{0%,100%{opacity:.032;transform:translateY(0) rotate(0deg)}50%{opacity:.06;transform:translateY(-3px) rotate(2deg)}}
+@keyframes dash{to{stroke-dashoffset:-220}}
+@keyframes driftA{0%,100%{transform:translate(0,0) rotate(-9deg)}50%{transform:translate(-8px,-8px) rotate(-14deg)}}
+@keyframes driftB{0%,100%{transform:translate(0,0) rotate(8deg)}50%{transform:translate(7px,-7px) rotate(12deg)}}
+@keyframes driftC{0%,100%{transform:translate(0,0) rotate(-6deg)}50%{transform:translate(-6px,-9px) rotate(-2deg)}}
+@keyframes flapL{0%,100%{transform:rotate(0deg) scale(1)}50%{transform:rotate(-20deg) scale(1.05)}}
+@keyframes flapR{0%,100%{transform:rotate(0deg) scale(1)}50%{transform:rotate(20deg) scale(1.05)}}
 
-.wrap{animation:fadeIn .4s ease}
-.n1{animation:slideIn .65s .1s both}
-.n2{animation:slideIn .65s .28s both}
-.n3{animation:slideIn .65s .44s both}
-.cur{animation:blink 1s .72s step-end infinite}
-.s-about{animation:fadeIn .55s .6s both}
-.s-stack{animation:fadeIn .55s .9s both}
-.br1{animation:fadeIn .45s 1.05s both}
-.br2{animation:fadeIn .45s 1.2s both}
-.br3{animation:fadeIn .45s 1.35s both}
-.br4{animation:fadeIn .45s 1.5s both}
-.s-proj{animation:fadeIn .55s 1.65s both}
-.p1{animation:fadeIn .45s 1.8s both}
-.p2{animation:fadeIn .45s 1.95s both}
-.p3{animation:fadeIn .45s 2.1s both}
-.p4{animation:fadeIn .45s 2.25s both}
-.p5{animation:fadeIn .45s 2.4s both}
-.p6{animation:fadeIn .45s 2.55s both}
-.p7{animation:fadeIn .45s 2.7s both}
-.p8{animation:fadeIn .45s 2.85s both}
-.s-conn{animation:fadeIn .55s 3.0s both}
-.r1{animation:breathe  9s ease-in-out       infinite}
-.r2{animation:breathe2 12s ease-in-out 4.5s infinite}
-.r3{animation:breathe  10s ease-in-out 8s   infinite}
-.bf1{animation:flutter  7s ease-in-out       infinite}
-.bf2{animation:flutter2 9s ease-in-out 3.5s  infinite}
-.bf3{animation:flutter3 11s ease-in-out 6s   infinite}
-
-/* dark theme */
-.bg{fill:#0d1117}.bg2{fill:#161b22}
+.bg{fill:#0d1117}
+.panel{fill:#161b22}
 .brd{stroke:#30363d}
-.txt{fill:#e6edf3}.muted{fill:#8b949e}
-.acc{fill:#58a6ff}.grn{fill:#3fb950}
-.sec{fill:#8b949e;letter-spacing:1.8px}
+.txt{fill:#e6edf3}
+.muted{fill:#8b949e}
+.acc{fill:#58a6ff}
+.grn{fill:#3fb950}
+.sec{fill:#8b949e;letter-spacing:1.6px}
 .tj{fill:#c9a800}
+.signal{stroke:url(#linePulse);stroke-width:1.25;stroke-dasharray:8 12;animation:dash 10s linear infinite}
 
-/* light theme */
+.wrap{animation:fadeIn .45s ease}
+.hero{animation:fadeIn .6s .08s both}
+.about{animation:fadeIn .55s .25s both}
+.stack{animation:fadeIn .55s .45s both}
+.proj{animation:fadeIn .55s .62s both}
+.p1{animation:fadeIn .45s .78s both}
+.p2{animation:fadeIn .45s .9s both}
+.p3{animation:fadeIn .45s 1.02s both}
+.p4{animation:fadeIn .45s 1.14s both}
+.p5{animation:fadeIn .45s 1.26s both}
+.p6{animation:fadeIn .45s 1.38s both}
+.cur{animation:blink 1.05s step-end infinite}
+
+.bf1{animation:driftA 6.8s ease-in-out infinite}
+.bf2{animation:driftB 8.2s ease-in-out 1.4s infinite}
+.bf3{animation:driftC 9.4s ease-in-out 2.4s infinite}
+.wing-l,.wing-r{transform-box:fill-box}
+.wing-l{transform-origin:right center;animation:flapL .82s ease-in-out infinite}
+.wing-r{transform-origin:left center;animation:flapR .82s ease-in-out infinite}
+.bf2 .wing-l,.bf2 .wing-r{animation-duration:.96s}
+.bf3 .wing-l,.bf3 .wing-r{animation-duration:1.08s}
+
 @media(prefers-color-scheme:light){
-.bg{fill:#fff}.bg2{fill:#f6f8fa}
+.bg{fill:#ffffff}
+.panel{fill:#f6f8fa}
 .brd{stroke:#d0d7de}
-.txt{fill:#24292f}.muted{fill:#57606a}
-.acc{fill:#0969da}.grn{fill:#1a7f37}
-.sec{fill:#57606a;letter-spacing:1.8px}
+.txt{fill:#24292f}
+.muted{fill:#57606a}
+.acc{fill:#0969da}
+.grn{fill:#1a7f37}
+.sec{fill:#57606a;letter-spacing:1.6px}
 .tj{fill:#7a6700}
 }
+
+@media(prefers-reduced-motion:reduce){
+*{animation:none!important}
+}
 </style>
-<linearGradient id="gl" x1="0%" x2="100%">
-  <stop offset="0%"   stop-color="#58a6ff"/>
-  <stop offset="48%"  stop-color="#bc8cff"/>
-  <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+
+<linearGradient id="topGlow" x1="0" y1="0" x2="860" y2="0" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#58a6ff"/>
+  <stop offset="0.48" stop-color="#bc8cff"/>
+  <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+  <animateTransform attributeName="gradientTransform" type="translate" values="-180 0;180 0;-180 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+
+<linearGradient id="linePulse" x1="32" y1="0" x2="828" y2="0" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
+  <stop offset="0.35" stop-color="#58a6ff" stop-opacity="0.85"/>
+  <stop offset="0.6" stop-color="#3fb950" stop-opacity="0.85"/>
+  <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
 </linearGradient>
 </defs>
 
-<!-- BG -->
-<rect width="860" height="1120" rx="12" class="bg"/>
-<rect x=".5" y=".5" width="859" height="1119" rx="11.5" fill="none" class="brd" stroke-width="1"/>
-<rect width="860" height="3" rx="2" fill="url(#gl)"/>
+<rect width="860" height="960" rx="12" class="bg"/>
+<rect x=".5" y=".5" width="859" height="959" rx="11.5" fill="none" class="brd" stroke-width="1"/>
+<rect x="0" y="0" width="860" height="3" rx="2" fill="url(#topGlow)"/>
 
-<!-- ── MATRIX RAIN (3 columns, breathing opacity) ── -->
-<g font-family="monospace" font-size="9" fill="#3fb950">
-  <text x="636" y="60" class="r1">1<tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">1</tspan><tspan x="636" dy="12">0</tspan></text>
-  <text x="720" y="150" class="r2">0<tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan><tspan x="720" dy="12">1</tspan><tspan x="720" dy="12">0</tspan></text>
-  <text x="808" y="90"  class="r3">1<tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">0</tspan><tspan x="808" dy="12">1</tspan><tspan x="808" dy="12">0</tspan></text>
+<circle cx="780" cy="126" r="98" fill="#58a6ff" opacity=".045"/>
+<circle cx="744" cy="420" r="112" fill="#3fb950" opacity=".038"/>
+<circle cx="792" cy="782" r="86" fill="#bc8cff" opacity=".04"/>
+
+<g class="bf1" transform="translate(772 156) rotate(-9)">
+  <g class="wing-l">
+    <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0" fill="#3fb950" opacity=".62"/>
+    <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2" fill="#3fb950" opacity=".42"/>
+  </g>
+  <g class="wing-r">
+    <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0" fill="#58a6ff" opacity=".62"/>
+    <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2" fill="#58a6ff" opacity=".42"/>
+  </g>
+  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".56"/>
 </g>
 
-<!-- ── BUTTERFLY 1 (top-right hero area) ── -->
-<g transform="translate(774,162) rotate(-10)" class="bf1">
-  <path d="M0,0 C-5,-17 -30,-19 -25,-7 C-20,4 -7,5 0,0"   fill="#3fb950" opacity=".55"/>
-  <path d="M0,0 C 5,-17  30,-19  25,-7 C 20,4  7,5 0,0"   fill="#58a6ff" opacity=".55"/>
-  <path d="M0,2 C-4,13 -21,15 -17,5 C-13,-2 -5,0 0,2"     fill="#3fb950" opacity=".38"/>
-  <path d="M0,2 C 4,13  21,15  17,5 C 13,-2  5,0 0,2"     fill="#58a6ff" opacity=".38"/>
-  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".5"/>
+<g class="bf2" transform="translate(816 432) rotate(8) scale(.8)">
+  <g class="wing-l">
+    <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0" fill="#bc8cff" opacity=".62"/>
+    <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2" fill="#bc8cff" opacity=".42"/>
+  </g>
+  <g class="wing-r">
+    <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0" fill="#e3b341" opacity=".62"/>
+    <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2" fill="#e3b341" opacity=".42"/>
+  </g>
+  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".56"/>
 </g>
 
-<!-- ── BUTTERFLY 2 (mid-right, tech stack zone) ── -->
-<g transform="translate(826,490) rotate(8) scale(.76)" class="bf2">
-  <path d="M0,0 C-5,-17 -30,-19 -25,-7 C-20,4 -7,5 0,0"   fill="#bc8cff" opacity=".55"/>
-  <path d="M0,0 C 5,-17  30,-19  25,-7 C 20,4  7,5 0,0"   fill="#e3b341" opacity=".55"/>
-  <path d="M0,2 C-4,13 -21,15 -17,5 C-13,-2 -5,0 0,2"     fill="#bc8cff" opacity=".38"/>
-  <path d="M0,2 C 4,13  21,15  17,5 C 13,-2  5,0 0,2"     fill="#e3b341" opacity=".38"/>
-  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".5"/>
-</g>
-
-<!-- ── BUTTERFLY 3 (lower area, near projects) ── -->
-<g transform="translate(800,900) rotate(-6) scale(.6)" class="bf3">
-  <path d="M0,0 C-5,-17 -30,-19 -25,-7 C-20,4 -7,5 0,0"   fill="#f0883e" opacity=".5"/>
-  <path d="M0,0 C 5,-17  30,-19  25,-7 C 20,4  7,5 0,0"   fill="#3fb950" opacity=".5"/>
-  <path d="M0,2 C-4,13 -21,15 -17,5 C-13,-2 -5,0 0,2"     fill="#f0883e" opacity=".35"/>
-  <path d="M0,2 C 4,13  21,15  17,5 C 13,-2  5,0 0,2"     fill="#3fb950" opacity=".35"/>
-  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".45"/>
+<g class="bf3" transform="translate(790 804) rotate(-6) scale(.66)">
+  <g class="wing-l">
+    <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0" fill="#f0883e" opacity=".6"/>
+    <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2" fill="#f0883e" opacity=".4"/>
+  </g>
+  <g class="wing-r">
+    <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0" fill="#3fb950" opacity=".6"/>
+    <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2" fill="#3fb950" opacity=".4"/>
+  </g>
+  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".52"/>
 </g>
 
 <g class="wrap">
+  <rect width="860" height="48" rx="12" class="panel"/>
+  <rect y="36" width="860" height="12" class="panel"/>
+  <circle cx="28" cy="24" r="5.5" fill="#f85149"/>
+  <circle cx="46" cy="24" r="5.5" fill="#e3b341"/>
+  <circle cx="64" cy="24" r="5.5" fill="#3fb950"/>
+  <text x="430" y="29" font-family="monospace" font-size="12" class="muted" text-anchor="middle">WhiteRabbitCoder / profile</text>
+  <line x1="0" y1="48" x2="860" y2="48" class="brd" stroke-width="1"/>
 
-<!-- ════════ TITLEBAR ════════ -->
-<rect width="860" height="48" rx="12" class="bg2"/>
-<rect y="36" width="860" height="12" class="bg2"/>
-<circle cx="28" cy="24" r="5.5" fill="#f85149"/>
-<circle cx="46" cy="24" r="5.5" fill="#e3b341"/>
-<circle cx="64" cy="24" r="5.5" fill="#3fb950"/>
-<text x="430" y="29" font-family="monospace" font-size="12" class="muted" text-anchor="middle">WhiteRabbitCoder / profile</text>
-<line x1="0" y1="48" x2="860" y2="48" class="brd" stroke-width="1"/>
+  <g class="hero">
+    <text x="32" y="96" font-family="monospace" font-size="17" class="grn">❯</text>
+    <text x="58" y="96" font-family="monospace" font-size="29" font-weight="700" class="txt">Angelo Gaviria</text>
+    <text x="302" y="96" font-family="monospace" font-size="29" class="acc cur">|</text>
+    <text x="58" y="121" font-family="monospace" font-size="14" class="acc">Backend · Frontend · Flutter · AI Automation</text>
+    <text x="58" y="144" font-family="monospace" font-size="12" class="muted">📍 Medellín, Colombia · 🎓 CS Engineering (6th semester) · 🗣 Spanish (native) · English (B2)</text>
+    <line x1="32" y1="156" x2="828" y2="156" class="signal"/>
+  </g>
 
-<!-- ════════ HERO ════════ -->
-<text x="32"  y="96" font-family="monospace" font-size="17" class="grn">❯</text>
-<text x="57"  y="96" font-family="monospace" font-size="29" font-weight="bold" class="txt n1">Angelo Gaviria</text>
-<text x="303" y="96" font-family="monospace" font-size="29" class="acc cur">|</text>
-<text x="57" y="121" font-family="monospace" font-size="14" class="acc n2">Backend · Frontend · Flutter · AI Automation</text>
-<text x="57" y="143" font-family="monospace" font-size="12" class="muted n3">📍 Medellín, Colombia  ·  🎓 CS Engineering, 6th semester  ·  🗣 Spanish (native) · English (B2)</text>
+  <g class="about">
+    <line x1="32" y1="176" x2="828" y2="176" class="brd" stroke-width="1"/>
+    <text x="32" y="190" font-family="monospace" font-size="10" class="sec">ABOUT ME</text>
 
-<!-- ════════ ABOUT ME ════════ -->
-<g class="s-about">
-<line x1="32" y1="167" x2="828" y2="167" class="brd" stroke-width="1"/>
-<text x="32"  y="181" font-family="monospace" font-size="10" class="sec">ABOUT ME</text>
+    <text x="44" y="216" font-family="monospace" font-size="13" class="grn">·</text>
+    <text x="60" y="216" font-family="monospace" font-size="13" class="txt">Building scalable backend services with Java, Spring Boot, and strong API design practices</text>
 
-<text x="44"  y="208" font-family="monospace" font-size="13" class="grn">·</text>
-<text x="60"  y="208" font-family="monospace" font-size="13" class="txt">🎓  CS Engineering, 6th semester @ Politécnico Colombiano Jaime Isaza Cadavid</text>
+    <text x="44" y="239" font-family="monospace" font-size="13" class="grn">·</text>
+    <text x="60" y="239" font-family="monospace" font-size="13" class="txt">Shipping web and mobile interfaces with React, Next.js, and Flutter</text>
 
-<text x="44"  y="231" font-family="monospace" font-size="13" class="grn">·</text>
-<text x="60"  y="231" font-family="monospace" font-size="13" class="txt">💻  Passionate about backend development with Java and scalable web systems</text>
+    <text x="44" y="262" font-family="monospace" font-size="13" class="grn">·</text>
+    <text x="60" y="262" font-family="monospace" font-size="13" class="txt">Exploring AI workflow automation with n8n, vector search, and practical LLM integrations</text>
 
-<text x="44"  y="254" font-family="monospace" font-size="13" class="grn">·</text>
-<text x="60"  y="254" font-family="monospace" font-size="13" class="txt">🎮  Game dev enthusiast — Roblox Studio &amp; Unity</text>
+    <text x="44" y="285" font-family="monospace" font-size="13" class="grn">·</text>
+    <text x="60" y="285" font-family="monospace" font-size="13" class="txt">Strong interest in product-minded engineering and clean architecture</text>
 
-<text x="44"  y="277" font-family="monospace" font-size="13" class="grn">·</text>
-<text x="60"  y="277" font-family="monospace" font-size="13" class="txt">🗣  Spanish (native) · English (B2)</text>
+    <text x="44" y="308" font-family="monospace" font-size="13" class="grn">·</text>
+    <text x="60" y="308" font-family="monospace" font-size="13" class="txt">Comfortable collaborating in English and Spanish across multidisciplinary teams</text>
+  </g>
 
-<text x="44"  y="300" font-family="monospace" font-size="13" class="grn">·</text>
-<text x="60"  y="300" font-family="monospace" font-size="13" class="txt">🤖  Exploring AI automation — n8n · pgvector · LLMs</text>
+  <g class="stack">
+    <line x1="32" y1="330" x2="828" y2="330" class="brd" stroke-width="1"/>
+    <text x="32" y="344" font-family="monospace" font-size="10" class="sec">TECH STACK</text>
 
-<text x="44"  y="323" font-family="monospace" font-size="13" class="grn">·</text>
-<text x="60"  y="323" font-family="monospace" font-size="13" class="txt">🤝  Always open to new challenges, collaborations, and opportunities</text>
-</g>
+    <text x="32" y="365" font-family="monospace" font-size="10" class="muted">· Languages</text>
+    <rect x="32" y="373" width="43" height="22" rx="4" fill="#EA2D2E" fill-opacity=".13" stroke="#EA2D2E" stroke-opacity=".45" stroke-width="1"/><text x="40" y="388" font-family="monospace" font-size="11" fill="#EA2D2E">Java</text>
+    <rect x="83" y="373" width="83" height="22" rx="4" fill="#3178C6" fill-opacity=".13" stroke="#3178C6" stroke-opacity=".45" stroke-width="1"/><text x="91" y="388" font-family="monospace" font-size="11" fill="#3178C6">TypeScript</text>
+    <rect x="174" y="373" width="83" height="22" rx="4" fill="#F7DF1E" fill-opacity=".13" stroke="#F7DF1E" stroke-opacity=".45" stroke-width="1"/><text x="182" y="388" font-family="monospace" font-size="11" class="tj">JavaScript</text>
+    <rect x="265" y="373" width="56" height="22" rx="4" fill="#3776AB" fill-opacity=".13" stroke="#3776AB" stroke-opacity=".45" stroke-width="1"/><text x="273" y="388" font-family="monospace" font-size="11" fill="#3776AB">Python</text>
+    <rect x="329" y="373" width="43" height="22" rx="4" fill="#0175C2" fill-opacity=".13" stroke="#0175C2" stroke-opacity=".45" stroke-width="1"/><text x="337" y="388" font-family="monospace" font-size="11" fill="#0175C2">Dart</text>
+    <rect x="380" y="373" width="30" height="22" rx="4" fill="#9B4F96" fill-opacity=".13" stroke="#9B4F96" stroke-opacity=".45" stroke-width="1"/><text x="388" y="388" font-family="monospace" font-size="11" fill="#9B4F96">C#</text>
 
-<!-- ════════ TECH STACK ════════ -->
-<g class="s-stack">
-<line x1="32" y1="349" x2="828" y2="349" class="brd" stroke-width="1"/>
-<text x="32"  y="363" font-family="monospace" font-size="10" class="sec">TECH STACK</text>
-<text x="32"  y="382" font-family="monospace" font-size="10" class="muted">· Languages</text>
-</g>
+    <text x="32" y="411" font-family="monospace" font-size="10" class="muted">· Backend &amp; Data</text>
+    <rect x="32" y="419" width="90" height="22" rx="4" fill="#6DB33F" fill-opacity=".13" stroke="#6DB33F" stroke-opacity=".45" stroke-width="1"/><text x="40" y="434" font-family="monospace" font-size="11" fill="#6DB33F">Spring Boot</text>
+    <rect x="130" y="419" width="56" height="22" rx="4" fill="#E0234E" fill-opacity=".13" stroke="#E0234E" stroke-opacity=".45" stroke-width="1"/><text x="138" y="434" font-family="monospace" font-size="11" fill="#E0234E">NestJS</text>
+    <rect x="194" y="419" width="63" height="22" rx="4" fill="#68A063" fill-opacity=".13" stroke="#68A063" stroke-opacity=".45" stroke-width="1"/><text x="202" y="434" font-family="monospace" font-size="11" fill="#68A063">Node.js</text>
+    <rect x="265" y="419" width="56" height="22" rx="4" fill="#512BD4" fill-opacity=".13" stroke="#512BD4" stroke-opacity=".45" stroke-width="1"/><text x="273" y="434" font-family="monospace" font-size="11" fill="#9b75f0">.NET 9</text>
+    <rect x="329" y="419" width="83" height="22" rx="4" fill="#336791" fill-opacity=".13" stroke="#336791" stroke-opacity=".45" stroke-width="1"/><text x="337" y="434" font-family="monospace" font-size="11" fill="#336791">PostgreSQL</text>
+    <rect x="420" y="419" width="69" height="22" rx="4" fill="#336791" fill-opacity=".1" stroke="#336791" stroke-opacity=".35" stroke-width="1"/><text x="428" y="434" font-family="monospace" font-size="11" fill="#5a8faf">pgvector</text>
 
-<!-- Row 1 — Languages -->
-<g class="br1">
-<rect x="32"  y="390" width="43" height="22" rx="4" fill="#EA2D2E" fill-opacity=".13" stroke="#EA2D2E" stroke-opacity=".45" stroke-width="1"/>
-<text x="40"  y="405" font-family="monospace" font-size="11" fill="#EA2D2E">Java</text>
-<rect x="83"  y="390" width="83" height="22" rx="4" fill="#3178C6" fill-opacity=".13" stroke="#3178C6" stroke-opacity=".45" stroke-width="1"/>
-<text x="91"  y="405" font-family="monospace" font-size="11" fill="#3178C6">TypeScript</text>
-<rect x="174" y="390" width="83" height="22" rx="4" fill="#F7DF1E" fill-opacity=".13" stroke="#F7DF1E" stroke-opacity=".45" stroke-width="1"/>
-<text x="182" y="405" font-family="monospace" font-size="11" class="tj">JavaScript</text>
-<rect x="265" y="390" width="56" height="22" rx="4" fill="#3776AB" fill-opacity=".13" stroke="#3776AB" stroke-opacity=".45" stroke-width="1"/>
-<text x="273" y="405" font-family="monospace" font-size="11" fill="#3776AB">Python</text>
-<rect x="329" y="390" width="43" height="22" rx="4" fill="#0175C2" fill-opacity=".13" stroke="#0175C2" stroke-opacity=".45" stroke-width="1"/>
-<text x="337" y="405" font-family="monospace" font-size="11" fill="#0175C2">Dart</text>
-<rect x="380" y="390" width="30" height="22" rx="4" fill="#9B4F96" fill-opacity=".13" stroke="#9B4F96" stroke-opacity=".45" stroke-width="1"/>
-<text x="388" y="405" font-family="monospace" font-size="11" fill="#9B4F96">C#</text>
-<rect x="418" y="390" width="37" height="22" rx="4" fill="#336791" fill-opacity=".13" stroke="#336791" stroke-opacity=".4"  stroke-width="1"/>
-<text x="426" y="405" font-family="monospace" font-size="11" fill="#5a8faf">SQL</text>
-<rect x="463" y="390" width="37" height="22" rx="4" fill="#8b949e" fill-opacity=".1"  stroke="#8b949e" stroke-opacity=".3"  stroke-width="1"/>
-<text x="471" y="405" font-family="monospace" font-size="11" fill="#8b949e">Lua</text>
-</g>
+    <text x="32" y="457" font-family="monospace" font-size="10" class="muted">· Frontend, Mobile &amp; Tooling</text>
+    <rect x="32" y="465" width="63" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".3" stroke-width="1"/><text x="40" y="480" font-family="monospace" font-size="11" fill="#8b949e">Next.js</text>
+    <rect x="103" y="465" width="50" height="22" rx="4" fill="#61DAFB" fill-opacity=".13" stroke="#61DAFB" stroke-opacity=".45" stroke-width="1"/><text x="111" y="480" font-family="monospace" font-size="11" fill="#61DAFB">React</text>
+    <rect x="161" y="465" width="50" height="22" rx="4" fill="#4FC08D" fill-opacity=".13" stroke="#4FC08D" stroke-opacity=".45" stroke-width="1"/><text x="169" y="480" font-family="monospace" font-size="11" fill="#4FC08D">Vue 3</text>
+    <rect x="219" y="465" width="63" height="22" rx="4" fill="#54C5F8" fill-opacity=".13" stroke="#54C5F8" stroke-opacity=".45" stroke-width="1"/><text x="227" y="480" font-family="monospace" font-size="11" fill="#54C5F8">Flutter</text>
+    <rect x="290" y="465" width="69" height="22" rx="4" fill="#00BCD4" fill-opacity=".13" stroke="#00BCD4" stroke-opacity=".45" stroke-width="1"/><text x="298" y="480" font-family="monospace" font-size="11" fill="#00BCD4">Riverpod</text>
+    <rect x="367" y="465" width="69" height="22" rx="4" fill="#06B6D4" fill-opacity=".13" stroke="#06B6D4" stroke-opacity=".45" stroke-width="1"/><text x="375" y="480" font-family="monospace" font-size="11" fill="#06B6D4">Tailwind</text>
+    <rect x="444" y="465" width="37" height="22" rx="4" fill="#EA4B71" fill-opacity=".13" stroke="#EA4B71" stroke-opacity=".45" stroke-width="1"/><text x="452" y="480" font-family="monospace" font-size="11" fill="#EA4B71">n8n</text>
+    <rect x="489" y="465" width="56" height="22" rx="4" fill="#2496ED" fill-opacity=".13" stroke="#2496ED" stroke-opacity=".45" stroke-width="1"/><text x="497" y="480" font-family="monospace" font-size="11" fill="#2496ED">Docker</text>
+    <rect x="553" y="465" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".3" stroke-width="1"/><text x="561" y="480" font-family="monospace" font-size="11" fill="#8b949e">Vercel</text>
+  </g>
 
-<text x="32" y="428" font-family="monospace" font-size="10" class="muted s-stack">· Backend</text>
+  <g class="proj">
+    <line x1="32" y1="548" x2="828" y2="548" class="brd" stroke-width="1"/>
+    <text x="32" y="562" font-family="monospace" font-size="10" class="sec">FEATURED PROJECTS</text>
+  </g>
 
-<!-- Row 2 — Backend -->
-<g class="br2">
-<rect x="32"  y="436" width="90" height="22" rx="4" fill="#6DB33F" fill-opacity=".13" stroke="#6DB33F" stroke-opacity=".45" stroke-width="1"/>
-<text x="40"  y="451" font-family="monospace" font-size="11" fill="#6DB33F">Spring Boot</text>
-<rect x="130" y="436" width="56" height="22" rx="4" fill="#E0234E" fill-opacity=".13" stroke="#E0234E" stroke-opacity=".45" stroke-width="1"/>
-<text x="138" y="451" font-family="monospace" font-size="11" fill="#E0234E">NestJS</text>
-<rect x="194" y="436" width="63" height="22" rx="4" fill="#68A063" fill-opacity=".13" stroke="#68A063" stroke-opacity=".45" stroke-width="1"/>
-<text x="202" y="451" font-family="monospace" font-size="11" fill="#68A063">Node.js</text>
-<rect x="265" y="436" width="56" height="22" rx="4" fill="#512BD4" fill-opacity=".13" stroke="#512BD4" stroke-opacity=".45" stroke-width="1"/>
-<text x="273" y="451" font-family="monospace" font-size="11" fill="#9b75f0">.NET 9</text>
-<rect x="329" y="436" width="76" height="22" rx="4" fill="#BCAE79" fill-opacity=".13" stroke="#BCAE79" stroke-opacity=".38" stroke-width="1"/>
-<text x="337" y="451" font-family="monospace" font-size="11" fill="#BCAE79">Hibernate</text>
-<rect x="413" y="436" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".1"  stroke="#8b949e" stroke-opacity=".3"  stroke-width="1"/>
-<text x="421" y="451" font-family="monospace" font-size="11" fill="#8b949e">Prisma</text>
-</g>
+  <g class="p1">
+    <rect x="32" y="580" width="248" height="164" rx="8" fill="#3fb950" fill-opacity=".05" stroke="#3fb950" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="33" y="581" width="3" height="162" rx="1" fill="#3fb950" fill-opacity=".55"/>
+    <text x="47" y="603" font-family="monospace" font-size="12" font-weight="700" fill="#3fb950">🌱 Gossip Garden</text>
+    <text x="47" y="620" font-family="monospace" font-size="10" class="muted">Flutter · Dart · Riverpod</text>
+    <text x="47" y="638" font-family="monospace" font-size="10" class="muted">Plant-care social app with sensor</text>
+    <text x="47" y="653" font-family="monospace" font-size="10" class="muted">monitoring and growth dashboard.</text>
+    <text x="47" y="722" font-family="monospace" font-size="9" fill="#3fb950" opacity=".56">↳ Danieloid3/Shadow_Protocol</text>
+  </g>
 
-<text x="32" y="474" font-family="monospace" font-size="10" class="muted s-stack">· Frontend &amp; Mobile</text>
+  <g class="p2">
+    <rect x="306" y="580" width="248" height="164" rx="8" fill="#58a6ff" fill-opacity=".05" stroke="#58a6ff" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="307" y="581" width="3" height="162" rx="1" fill="#58a6ff" fill-opacity=".55"/>
+    <text x="321" y="603" font-family="monospace" font-size="12" font-weight="700" fill="#58a6ff">🐾 petcare-ops</text>
+    <text x="321" y="620" font-family="monospace" font-size="10" class="muted">n8n · pgvector · Next.js · TypeScript</text>
+    <text x="321" y="638" font-family="monospace" font-size="10" class="muted">Multi-channel AI operations center</text>
+    <text x="321" y="653" font-family="monospace" font-size="10" class="muted">for a veterinary clinic workflow.</text>
+    <text x="321" y="722" font-family="monospace" font-size="9" fill="#58a6ff" opacity=".56">↳ Private repository</text>
+  </g>
 
-<!-- Row 3 — Frontend & Mobile -->
-<g class="br3">
-<rect x="32"  y="482" width="63" height="22" rx="4" fill="#8b949e" fill-opacity=".1"  stroke="#8b949e" stroke-opacity=".3"  stroke-width="1"/>
-<text x="40"  y="497" font-family="monospace" font-size="11" fill="#8b949e">Next.js</text>
-<rect x="103" y="482" width="50" height="22" rx="4" fill="#61DAFB" fill-opacity=".13" stroke="#61DAFB" stroke-opacity=".45" stroke-width="1"/>
-<text x="111" y="497" font-family="monospace" font-size="11" fill="#61DAFB">React</text>
-<rect x="161" y="482" width="50" height="22" rx="4" fill="#4FC08D" fill-opacity=".13" stroke="#4FC08D" stroke-opacity=".45" stroke-width="1"/>
-<text x="169" y="497" font-family="monospace" font-size="11" fill="#4FC08D">Vue 3</text>
-<rect x="219" y="482" width="63" height="22" rx="4" fill="#54C5F8" fill-opacity=".13" stroke="#54C5F8" stroke-opacity=".45" stroke-width="1"/>
-<text x="227" y="497" font-family="monospace" font-size="11" fill="#54C5F8">Flutter</text>
-<rect x="290" y="482" width="69" height="22" rx="4" fill="#00BCD4" fill-opacity=".13" stroke="#00BCD4" stroke-opacity=".45" stroke-width="1"/>
-<text x="298" y="497" font-family="monospace" font-size="11" fill="#00BCD4">Riverpod</text>
-<rect x="367" y="482" width="69" height="22" rx="4" fill="#06B6D4" fill-opacity=".13" stroke="#06B6D4" stroke-opacity=".45" stroke-width="1"/>
-<text x="375" y="497" font-family="monospace" font-size="11" fill="#06B6D4">Tailwind</text>
-<rect x="444" y="482" width="37" height="22" rx="4" fill="#EA4B71" fill-opacity=".13" stroke="#EA4B71" stroke-opacity=".45" stroke-width="1"/>
-<text x="452" y="497" font-family="monospace" font-size="11" fill="#EA4B71">n8n</text>
-<rect x="489" y="482" width="50" height="22" rx="4" fill="#8b949e" fill-opacity=".1"  stroke="#8b949e" stroke-opacity=".3"  stroke-width="1"/>
-<text x="497" y="497" font-family="monospace" font-size="11" fill="#8b949e">Unity</text>
-</g>
+  <g class="p3">
+    <rect x="580" y="580" width="248" height="164" rx="8" fill="#f0883e" fill-opacity=".05" stroke="#f0883e" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="581" y="581" width="3" height="162" rx="1" fill="#f0883e" fill-opacity=".55"/>
+    <text x="595" y="603" font-family="monospace" font-size="12" font-weight="700" fill="#f0883e">🎬 Trama</text>
+    <text x="595" y="620" font-family="monospace" font-size="10" class="muted">Spring Boot · Next.js · Firebase</text>
+    <text x="595" y="638" font-family="monospace" font-size="10" class="muted">Movie social network with auth,</text>
+    <text x="595" y="653" font-family="monospace" font-size="10" class="muted">likes, lists, followers, and chat.</text>
+    <text x="595" y="722" font-family="monospace" font-size="9" fill="#f0883e" opacity=".56">↳ WhiteRabbitCoder/TramaBack</text>
+  </g>
 
-<text x="32" y="520" font-family="monospace" font-size="10" class="muted s-stack">· Databases &amp; Cloud</text>
+  <g class="p4">
+    <rect x="32" y="762" width="248" height="164" rx="8" fill="#e3b341" fill-opacity=".05" stroke="#e3b341" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="33" y="763" width="3" height="162" rx="1" fill="#e3b341" fill-opacity=".55"/>
+    <text x="47" y="785" font-family="monospace" font-size="12" font-weight="700" fill="#e3b341">📊 Promise</text>
+    <text x="47" y="802" font-family="monospace" font-size="10" class="muted">JavaScript · Python · n8n</text>
+    <text x="47" y="820" font-family="monospace" font-size="10" class="muted">Modular platform ecosystem for</text>
+    <text x="47" y="835" font-family="monospace" font-size="10" class="muted">landing, dashboard, and voice AI.</text>
+    <text x="47" y="904" font-family="monospace" font-size="9" fill="#e3b341" opacity=".56">↳ Promise ecosystem repositories</text>
+  </g>
 
-<!-- Row 4 — Databases & Cloud -->
-<g class="br4">
-<rect x="32"  y="528" width="83" height="22" rx="4" fill="#336791" fill-opacity=".13" stroke="#336791" stroke-opacity=".45" stroke-width="1"/>
-<text x="40"  y="543" font-family="monospace" font-size="11" fill="#336791">PostgreSQL</text>
-<rect x="123" y="528" width="50" height="22" rx="4" fill="#4479A1" fill-opacity=".13" stroke="#4479A1" stroke-opacity=".45" stroke-width="1"/>
-<text x="131" y="543" font-family="monospace" font-size="11" fill="#4479A1">MySQL</text>
-<rect x="181" y="528" width="69" height="22" rx="4" fill="#FFA000" fill-opacity=".13" stroke="#FFA000" stroke-opacity=".45" stroke-width="1"/>
-<text x="189" y="543" font-family="monospace" font-size="11" fill="#FFA000">Firebase</text>
-<rect x="258" y="528" width="69" height="22" rx="4" fill="#3ECF8E" fill-opacity=".13" stroke="#3ECF8E" stroke-opacity=".45" stroke-width="1"/>
-<text x="266" y="543" font-family="monospace" font-size="11" fill="#3ECF8E">Supabase</text>
-<rect x="335" y="528" width="56" height="22" rx="4" fill="#2496ED" fill-opacity=".13" stroke="#2496ED" stroke-opacity=".45" stroke-width="1"/>
-<text x="343" y="543" font-family="monospace" font-size="11" fill="#2496ED">Docker</text>
-<rect x="399" y="528" width="56" height="22" rx="4" fill="#8b949e" fill-opacity=".1"  stroke="#8b949e" stroke-opacity=".3"  stroke-width="1"/>
-<text x="407" y="543" font-family="monospace" font-size="11" fill="#8b949e">Vercel</text>
-<rect x="463" y="528" width="69" height="22" rx="4" fill="#336791" fill-opacity=".1"  stroke="#336791" stroke-opacity=".35" stroke-width="1"/>
-<text x="471" y="543" font-family="monospace" font-size="11" fill="#5a8faf">pgvector</text>
-<rect x="540" y="528" width="76" height="22" rx="4" fill="#BCAE79" fill-opacity=".1"  stroke="#BCAE79" stroke-opacity=".32" stroke-width="1"/>
-<text x="548" y="543" font-family="monospace" font-size="11" fill="#BCAE79">Railway</text>
-</g>
+  <g class="p5">
+    <rect x="306" y="762" width="248" height="164" rx="8" fill="#bc8cff" fill-opacity=".05" stroke="#bc8cff" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="307" y="763" width="3" height="162" rx="1" fill="#bc8cff" fill-opacity=".55"/>
+    <text x="321" y="785" font-family="monospace" font-size="12" font-weight="700" fill="#bc8cff">📚 Library Management</text>
+    <text x="321" y="802" font-family="monospace" font-size="10" class="muted">Node.js · Prisma · Next.js</text>
+    <text x="321" y="820" font-family="monospace" font-size="10" class="muted">Full CRUD with admin and return</text>
+    <text x="321" y="835" font-family="monospace" font-size="10" class="muted">control deployed on Railway/Vercel.</text>
+    <text x="321" y="904" font-family="monospace" font-size="9" fill="#bc8cff" opacity=".56">↳ WhiteRabbitCoder/library-management</text>
+  </g>
 
-<!-- ════════ FEATURED PROJECTS ════════ -->
-<g class="s-proj">
-<line x1="32" y1="566" x2="828" y2="566" class="brd" stroke-width="1"/>
-<text x="32"  y="580" font-family="monospace" font-size="10" class="sec">FEATURED PROJECTS</text>
-</g>
-
-<!-- ── Row 1: Gossip Garden · petcare-ops · Trama (3 cols, h=100) ── -->
-
-<!-- Gossip Garden -->
-<g class="p1">
-<rect x="32"  y="594" width="257" height="100" rx="6" fill="#3fb950" fill-opacity=".05" stroke="#3fb950" stroke-opacity=".2" stroke-width="1"/>
-<rect x="33"  y="595" width="3"   height="98"  rx="1" fill="#3fb950" fill-opacity=".55"/>
-<text x="47"  y="614" font-family="monospace" font-size="12" font-weight="bold" fill="#3fb950">🌱 Gossip Garden</text>
-<text x="47"  y="630" font-family="monospace" font-size="10" fill="#8b949e">Flutter · Dart · Riverpod</text>
-<text x="47"  y="645" font-family="monospace" font-size="10" fill="#8b949e">Plant care social app with</text>
-<text x="47"  y="659" font-family="monospace" font-size="10" fill="#8b949e">sensor monitoring &amp; dashboard</text>
-<text x="47"  y="685" font-family="monospace" font-size="9"  fill="#3fb950" opacity=".5">↳ Danieloid3/Shadow_Protocol</text>
-</g>
-
-<!-- petcare-ops -->
-<g class="p2">
-<rect x="301" y="594" width="257" height="100" rx="6" fill="#58a6ff" fill-opacity=".05" stroke="#58a6ff" stroke-opacity=".2" stroke-width="1"/>
-<rect x="302" y="595" width="3"   height="98"  rx="1" fill="#58a6ff" fill-opacity=".55"/>
-<text x="316" y="614" font-family="monospace" font-size="12" font-weight="bold" fill="#58a6ff">🐾 petcare-ops</text>
-<text x="316" y="630" font-family="monospace" font-size="10" fill="#8b949e">n8n · pgvector · Next.js · TypeScript</text>
-<text x="316" y="645" font-family="monospace" font-size="10" fill="#8b949e">Multi-channel AI ops center</text>
-<text x="316" y="659" font-family="monospace" font-size="10" fill="#8b949e">for a veterinary clinic</text>
-<text x="316" y="685" font-family="monospace" font-size="9"  fill="#58a6ff" opacity=".5">↳ Private repo</text>
-</g>
-
-<!-- Trama -->
-<g class="p3">
-<rect x="570" y="594" width="258" height="100" rx="6" fill="#f0883e" fill-opacity=".05" stroke="#f0883e" stroke-opacity=".2" stroke-width="1"/>
-<rect x="571" y="595" width="3"   height="98"  rx="1" fill="#f0883e" fill-opacity=".55"/>
-<!-- logo placeholder -->
-<rect x="785" y="600" width="38" height="38" rx="5" fill="#f0883e" fill-opacity=".08" stroke="#f0883e" stroke-opacity=".28" stroke-width="1" stroke-dasharray="3,2"/>
-<text x="804" y="622" font-family="monospace" font-size="7" fill="#f0883e" opacity=".38" text-anchor="middle">logo</text>
-<text x="585" y="614" font-family="monospace" font-size="12" font-weight="bold" fill="#f0883e">🎬 Trama</text>
-<text x="585" y="630" font-family="monospace" font-size="10" fill="#8b949e">Spring Boot · Next.js · Firebase</text>
-<text x="585" y="645" font-family="monospace" font-size="10" fill="#8b949e">Movie social network — login,</text>
-<text x="585" y="659" font-family="monospace" font-size="10" fill="#8b949e">likes, lists, followers, chat</text>
-<text x="585" y="685" font-family="monospace" font-size="9"  fill="#f0883e" opacity=".5">↳ WhiteRabbitCoder/TramaBack</text>
-</g>
-
-<!-- ── Row 2: Promise — full width (h=100) ── -->
-<g class="p4">
-<rect x="32"  y="706" width="796" height="100" rx="6" fill="#e3b341" fill-opacity=".05" stroke="#e3b341" stroke-opacity=".2" stroke-width="1"/>
-<rect x="33"  y="707" width="3"   height="98"  rx="1" fill="#e3b341" fill-opacity=".55"/>
-<!-- logo placeholder -->
-<rect x="47"  y="714" width="64" height="64" rx="8" fill="#e3b341" fill-opacity=".08" stroke="#e3b341" stroke-opacity=".28" stroke-width="1" stroke-dasharray="3,2"/>
-<text x="79"  y="750" font-family="monospace" font-size="8"  fill="#e3b341" opacity=".38" text-anchor="middle">logo</text>
-<!-- content -->
-<text x="126" y="726" font-family="monospace" font-size="13" font-weight="bold" fill="#e3b341">📊 Promise</text>
-<text x="126" y="742" font-family="monospace" font-size="10" fill="#8b949e">JavaScript · Python · HTML / CSS · n8n · Sofia voice layer</text>
-<text x="126" y="757" font-family="monospace" font-size="10" fill="#8b949e">Modular platform ecosystem — landing page, video player, dashboard and AI-powered voice module</text>
-<text x="126" y="772" font-family="monospace" font-size="10" fill="#8b949e">Multi-repo architecture designed for scalability and independent deployment</text>
-<text x="126" y="797" font-family="monospace" font-size="9"  fill="#e3b341" opacity=".5">↳ PromiseLandingPage · iPromiseDashboard · PromiseMetaRepo · PromiseVideo · SofiaModular</text>
-</g>
-
-<!-- ── Row 3: Waffles Restaurant · Library Management (2 cols, h=87) ── -->
-
-<!-- Waffles Restaurant -->
-<g class="p5">
-<rect x="32"  y="818" width="392" height="87" rx="6" fill="#f0883e" fill-opacity=".05" stroke="#f0883e" stroke-opacity=".2" stroke-width="1"/>
-<rect x="33"  y="819" width="3"   height="85"  rx="1" fill="#f0883e" fill-opacity=".5"/>
-<text x="47"  y="837" font-family="monospace" font-size="12" font-weight="bold" fill="#f0883e">🧇 Waffles Restaurant</text>
-<text x="47"  y="853" font-family="monospace" font-size="10" fill="#8b949e">Spring Boot · Thymeleaf · MySQL</text>
-<text x="47"  y="868" font-family="monospace" font-size="10" fill="#8b949e">Online store — shopping cart &amp; admin panel</text>
-<text x="47"  y="883" font-family="monospace" font-size="9"  fill="#f0883e" opacity=".5">↳ Payment gateway integration ready</text>
-</g>
-
-<!-- Library Management -->
-<g class="p6">
-<rect x="436" y="818" width="392" height="87" rx="6" fill="#bc8cff" fill-opacity=".05" stroke="#bc8cff" stroke-opacity=".2" stroke-width="1"/>
-<rect x="437" y="819" width="3"   height="85"  rx="1" fill="#bc8cff" fill-opacity=".5"/>
-<text x="451" y="837" font-family="monospace" font-size="12" font-weight="bold" fill="#bc8cff">📚 Library Management System</text>
-<text x="451" y="853" font-family="monospace" font-size="10" fill="#8b949e">Node.js · Prisma · Next.js · PostgreSQL</text>
-<text x="451" y="868" font-family="monospace" font-size="10" fill="#8b949e">Full CRUD — admin view, return control</text>
-<text x="451" y="883" font-family="monospace" font-size="9"  fill="#bc8cff" opacity=".5">↳ Deployed on Railway / Vercel</text>
-</g>
-
-<!-- ── Row 4: Accounting App · BidCalculator (2 cols, h=87) ── -->
-
-<!-- Desktop Accounting App -->
-<g class="p7">
-<rect x="32"  y="917" width="392" height="87" rx="6" fill="#3776AB" fill-opacity=".05" stroke="#3776AB" stroke-opacity=".2" stroke-width="1"/>
-<rect x="33"  y="918" width="3"   height="85"  rx="1" fill="#3776AB" fill-opacity=".5"/>
-<text x="47"  y="935" font-family="monospace" font-size="12" font-weight="bold" fill="#3776AB">🧮 Desktop Accounting App</text>
-<text x="47"  y="951" font-family="monospace" font-size="10" fill="#8b949e">Python · Tkinter</text>
-<text x="47"  y="966" font-family="monospace" font-size="10" fill="#8b949e">GUI for prices with VAT &amp; margins</text>
-<text x="47"  y="981" font-family="monospace" font-size="9"  fill="#3776AB" opacity=".5">↳ Exportable as .exe</text>
-</g>
-
-<!-- BidCalculator -->
-<g class="p8">
-<rect x="436" y="917" width="392" height="87" rx="6" fill="#9b75f0" fill-opacity=".05" stroke="#9b75f0" stroke-opacity=".2" stroke-width="1"/>
-<rect x="437" y="918" width="3"   height="85"  rx="1" fill="#9b75f0" fill-opacity=".5"/>
-<text x="451" y="935" font-family="monospace" font-size="12" font-weight="bold" fill="#9b75f0">🔧 BidCalculator</text>
-<text x="451" y="951" font-family="monospace" font-size="10" fill="#8b949e">.NET 9 · Vue 3 · C# · Unit Testing</text>
-<text x="451" y="966" font-family="monospace" font-size="10" fill="#8b949e">Vehicle bid fee calculator — clean OOP</text>
-<text x="451" y="981" font-family="monospace" font-size="9"  fill="#9b75f0" opacity=".5">↳ WhiteRabbitCoder/BidCalculator</text>
-</g>
-
-<!-- ════════ CONNECT ════════ -->
-<g class="s-conn">
-<line x1="32" y1="1020" x2="828" y2="1020" class="brd" stroke-width="1"/>
-<text x="32"  y="1034" font-family="monospace" font-size="10" class="sec">LET'S CONNECT</text>
-
-<!-- LinkedIn -->
-<rect x="232" y="1048" width="126" height="34" rx="6" fill="#0077B5" fill-opacity=".13" stroke="#0077B5" stroke-opacity=".42" stroke-width="1"/>
-<text x="258" y="1070" font-family="monospace" font-size="12" fill="#0077B5">in  LinkedIn</text>
-
-<!-- Gmail -->
-<rect x="372" y="1048" width="116" height="34" rx="6" fill="#D14836" fill-opacity=".13" stroke="#D14836" stroke-opacity=".42" stroke-width="1"/>
-<text x="397" y="1070" font-family="monospace" font-size="12" fill="#D14836">✉  Gmail</text>
-
-<!-- GitHub -->
-<rect x="502" y="1048" width="126" height="34" rx="6" fill="#8b949e" fill-opacity=".1" stroke="#8b949e" stroke-opacity=".35" stroke-width="1"/>
-<text x="528" y="1070" font-family="monospace" font-size="12" fill="#8b949e">⌥  GitHub</text>
-
-<!-- follow the white rabbit — subtle easter egg -->
-<text x="430" y="1104" font-family="monospace" font-size="9" fill="#3fb950" opacity=".11" text-anchor="middle" font-style="italic">follow the white rabbit...</text>
-</g>
-
+  <g class="p6">
+    <rect x="580" y="762" width="248" height="164" rx="8" fill="#9b75f0" fill-opacity=".05" stroke="#9b75f0" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="581" y="763" width="3" height="162" rx="1" fill="#9b75f0" fill-opacity=".55"/>
+    <text x="595" y="785" font-family="monospace" font-size="12" font-weight="700" fill="#9b75f0">🔧 BidCalculator</text>
+    <text x="595" y="802" font-family="monospace" font-size="10" class="muted">.NET 9 · Vue 3 · C# · Tests</text>
+    <text x="595" y="820" font-family="monospace" font-size="10" class="muted">Vehicle bid fee calculator with</text>
+    <text x="595" y="835" font-family="monospace" font-size="10" class="muted">clean OOP structure and test suite.</text>
+    <text x="595" y="904" font-family="monospace" font-size="9" fill="#9b75f0" opacity=".56">↳ WhiteRabbitCoder/BidCalculator</text>
+  </g>
 </g>
 </svg>
