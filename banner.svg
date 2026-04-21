@@ -5,8 +5,6 @@
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes dash{to{stroke-dashoffset:-220}}
 @keyframes driftA{0%,100%{transform:translate(0,0) rotate(-9deg)}50%{transform:translate(-8px,-8px) rotate(-14deg)}}
-@keyframes driftB{0%,100%{transform:translate(0,0) rotate(8deg)}50%{transform:translate(7px,-7px) rotate(12deg)}}
-@keyframes driftC{0%,100%{transform:translate(0,0) rotate(-6deg)}50%{transform:translate(-6px,-9px) rotate(-2deg)}}
 @keyframes flapL{0%,100%{transform:rotate(0deg) scale(1)}50%{transform:rotate(-20deg) scale(1.05)}}
 @keyframes flapR{0%,100%{transform:rotate(0deg) scale(1)}50%{transform:rotate(20deg) scale(1.05)}}
 
@@ -34,14 +32,24 @@
 .p6{animation:fadeIn .45s 1.38s both}
 .cur{animation:blink 1.05s step-end infinite}
 
-.bf1{animation:driftA 6.8s ease-in-out infinite}
-.bf2{animation:driftB 8.2s ease-in-out 1.4s infinite}
-.bf3{animation:driftC 9.4s ease-in-out 2.4s infinite}
-.wing-l,.wing-r{transform-box:fill-box}
-.wing-l{transform-origin:right center;animation:flapL .82s ease-in-out infinite}
-.wing-r{transform-origin:left center;animation:flapR .82s ease-in-out infinite}
-.bf2 .wing-l,.bf2 .wing-r{animation-duration:.96s}
-.bf3 .wing-l,.bf3 .wing-r{animation-duration:1.08s}
+.butterfly{opacity:.09}
+.bf-live{opacity:.2;animation:driftA 6.8s ease-in-out infinite}
+.bf-live .wing-l,.bf-live .wing-r{transform-box:fill-box}
+.bf-live .wing-l{transform-origin:right center;animation:flapL .82s ease-in-out infinite}
+.bf-live .wing-r{transform-origin:left center;animation:flapR .82s ease-in-out infinite}
+.wing-trace{fill:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:.14}
+.body-trace{fill:none;stroke-width:.9;stroke-opacity:.12}
+.bf-live .wing-trace{stroke-width:1.18;stroke-opacity:.24}
+.bf-live .body-trace{stroke-opacity:.18}
+.bf-ghost .wing-trace{stroke-opacity:.14}
+.bf-ghost .body-trace{stroke-opacity:.12}
+.bf-far .wing-trace{stroke-opacity:.1}
+.bf-far .body-trace{stroke-opacity:.09}
+.bf-a{stroke:#79c0ff}
+.bf-b{stroke:#7ee787}
+.bf-c{stroke:#d2a8ff}
+.bf-d{stroke:#e3b341}
+.bf-body{stroke:#8b949e}
 
 @media(prefers-color-scheme:light){
 .bg{fill:#ffffff}
@@ -53,6 +61,11 @@
 .grn{fill:#1a7f37}
 .sec{fill:#57606a;letter-spacing:1.6px}
 .tj{fill:#7a6700}
+.bf-a{stroke:#0969da}
+.bf-b{stroke:#1a7f37}
+.bf-c{stroke:#8250df}
+.bf-d{stroke:#9a6700}
+.bf-body{stroke:#57606a}
 }
 
 @media(prefers-reduced-motion:reduce){
@@ -73,6 +86,18 @@
   <stop offset="0.6" stop-color="#3fb950" stop-opacity="0.85"/>
   <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
 </linearGradient>
+
+<g id="butterfly-wing-left" fill="none">
+  <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0"/>
+  <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2"/>
+</g>
+
+<g id="butterfly-wing-right" fill="none">
+  <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0"/>
+  <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2"/>
+</g>
+
+<ellipse id="butterfly-body" cx="0" cy="-1" rx="1.2" ry="11" fill="none"/>
 </defs>
 
 <rect width="860" height="960" rx="12" class="bg"/>
@@ -83,40 +108,34 @@
 <circle cx="744" cy="420" r="112" fill="#3fb950" opacity=".038"/>
 <circle cx="792" cy="782" r="86" fill="#bc8cff" opacity=".04"/>
 
-<g class="bf1" transform="translate(772 156) rotate(-9)">
+<g class="butterfly bf-live" transform="translate(772 156) rotate(-9)">
   <g class="wing-l">
-    <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0" fill="#3fb950" opacity=".62"/>
-    <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2" fill="#3fb950" opacity=".42"/>
+    <use href="#butterfly-wing-left" class="wing-trace bf-b"/>
   </g>
   <g class="wing-r">
-    <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0" fill="#58a6ff" opacity=".62"/>
-    <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2" fill="#58a6ff" opacity=".42"/>
+    <use href="#butterfly-wing-right" class="wing-trace bf-a"/>
   </g>
-  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".56"/>
+  <use href="#butterfly-body" class="body-trace bf-body"/>
 </g>
 
-<g class="bf2" transform="translate(816 432) rotate(8) scale(.8)">
+<g class="butterfly bf-ghost" transform="translate(816 432) rotate(8) scale(.8)">
   <g class="wing-l">
-    <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0" fill="#bc8cff" opacity=".62"/>
-    <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2" fill="#bc8cff" opacity=".42"/>
+    <use href="#butterfly-wing-left" class="wing-trace bf-c"/>
   </g>
   <g class="wing-r">
-    <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0" fill="#e3b341" opacity=".62"/>
-    <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2" fill="#e3b341" opacity=".42"/>
+    <use href="#butterfly-wing-right" class="wing-trace bf-d"/>
   </g>
-  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".56"/>
+  <use href="#butterfly-body" class="body-trace bf-body"/>
 </g>
 
-<g class="bf3" transform="translate(790 804) rotate(-6) scale(.66)">
+<g class="butterfly bf-far" transform="translate(790 804) rotate(-6) scale(.66)">
   <g class="wing-l">
-    <path d="M0,0 C-7,-20 -33,-23 -27,-8 C-21,6 -8,6 0,0" fill="#f0883e" opacity=".6"/>
-    <path d="M0,2 C-5,14 -22,17 -18,6 C-14,-1 -6,0 0,2" fill="#f0883e" opacity=".4"/>
+    <use href="#butterfly-wing-left" class="wing-trace bf-d"/>
   </g>
   <g class="wing-r">
-    <path d="M0,0 C7,-20 33,-23 27,-8 C21,6 8,6 0,0" fill="#3fb950" opacity=".6"/>
-    <path d="M0,2 C5,14 22,17 18,6 C14,-1 6,0 0,2" fill="#3fb950" opacity=".4"/>
+    <use href="#butterfly-wing-right" class="wing-trace bf-b"/>
   </g>
-  <ellipse cx="0" cy="-1" rx="1.2" ry="11" fill="#8b949e" opacity=".52"/>
+  <use href="#butterfly-body" class="body-trace bf-body"/>
 </g>
 
 <g class="wrap">
